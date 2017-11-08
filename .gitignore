@@ -1,0 +1,14 @@
+Leiningen.gitignore
+resources/public/js/compiled/
+target/
+repo/
+\.lein-repl-history
+Procfile
+*.log
+lein_repl\.sh
+project_clj_old
+wesele-app\.iml
+Leiningen.gitignore
+resources/public/js/compiled/
+.nrepl-port
+wesele_app/Docker/

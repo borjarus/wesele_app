@@ -1,0 +1,19 @@
+version: '3.4'
+services:
+  web:
+    image: mila/wesele-app
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - 80:10535
+    depends_on:
+      - mongo
+    command: 'lein run'
+    environment:
+      TZ: 'Europe/Warsaw'
+      CLOJURE_ENV: 'development'
+  mongo:
+    image: mvertes/alpine-mongo
+    hostname: wesele-mongo
+    ports:
+      - 27017
