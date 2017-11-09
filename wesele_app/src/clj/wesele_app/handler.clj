@@ -49,7 +49,7 @@
   (try
     (let [host "mongo"
           port "27017"]
-      (println (str host " -- " port))
+      ;;(println (str host " -- " port))
       (mg/connect {:host host :port (Integer/parseInt port)}))
     (catch Exception e (println (str "[DB-ERROR] " (.getMessage e))))))
 

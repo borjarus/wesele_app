@@ -1,12 +1,12 @@
-version: '3.4'
+version: '2'
 services:
   web:
     image: 818228774882.dkr.ecr.eu-central-1.amazonaws.com/mila/wesele-app
-    volumes:
-      - .:/w
+#    volumes:
+      #- .:/w
     ports:
       - 10535:10535
-    depends_on: 
+    links:
       - mongo
     command: 'lein run'
     environment:
