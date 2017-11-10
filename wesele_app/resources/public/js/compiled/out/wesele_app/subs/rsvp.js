@@ -12,4 +12,4 @@ re_frame.core.reg_sub.call(null,new cljs.core.Keyword(null,"is-rsvp2","is-rsvp2"
 return cljs.core.get_in.call(null,db,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"user","user",1532431356),new cljs.core.Keyword(null,"details","details",1956795411),new cljs.core.Keyword(null,"is_rsvp2","is_rsvp2",-1527583450)], null));
 }));
 
-//# sourceMappingURL=rsvp.js.map?rel=1495556956590
+//# sourceMappingURL=rsvp.js.map?rel=1510317481895

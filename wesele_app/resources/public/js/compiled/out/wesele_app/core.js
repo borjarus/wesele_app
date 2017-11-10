@@ -44,4 +44,4 @@ return wesele_app.core.mount_root.call(null);
 });
 goog.exportSymbol('wesele_app.core.init', wesele_app.core.init);
 
-//# sourceMappingURL=core.js.map?rel=1496166615462
+//# sourceMappingURL=core.js.map?rel=1510319813649

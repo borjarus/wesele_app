@@ -8,15 +8,15 @@ goog.require('goog.storage.Storage');
 goog.require('goog.storage.mechanism.HTML5LocalStorage');
 wesele_app.utils.login.get_login_type = (function wesele_app$utils$login$get_login_type(type){
 var s = (new goog.storage.Storage((new goog.storage.mechanism.HTML5LocalStorage())));
-var v = (function (){var pred__64081 = cljs.core._EQ_;
-var expr__64082 = type;
-if(cljs.core.truth_(pred__64081.call(null,new cljs.core.Keyword(null,"time","time",1385887882),expr__64082))){
+var v = (function (){var pred__60438 = cljs.core._EQ_;
+var expr__60439 = type;
+if(cljs.core.truth_(pred__60438.call(null,new cljs.core.Keyword(null,"time","time",1385887882),expr__60439))){
 return s.get("login-exp");
 } else {
-if(cljs.core.truth_(pred__64081.call(null,new cljs.core.Keyword(null,"user","user",1532431356),expr__64082))){
+if(cljs.core.truth_(pred__60438.call(null,new cljs.core.Keyword(null,"user","user",1532431356),expr__60439))){
 return s.get("login");
 } else {
-throw (new Error([cljs.core.str.cljs$core$IFn$_invoke$arity$1("No matching clause: "),cljs.core.str.cljs$core$IFn$_invoke$arity$1(expr__64082)].join('')));
+throw (new Error([cljs.core.str.cljs$core$IFn$_invoke$arity$1("No matching clause: "),cljs.core.str.cljs$core$IFn$_invoke$arity$1(expr__60439)].join('')));
 }
 }
 })();
@@ -52,8 +52,8 @@ return true;
 return false;
 }
 });
-var user_64084 = wesele_app.utils.login.get_login_type.call(null,new cljs.core.Keyword(null,"user","user",1532431356));
-var clt_64085 = wesele_app.utils.login.check_login_time.call(null);
-new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [user_64084,clt_64085], null);
+var user_60441 = wesele_app.utils.login.get_login_type.call(null,new cljs.core.Keyword(null,"user","user",1532431356));
+var clt_60442 = wesele_app.utils.login.check_login_time.call(null);
+new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [user_60441,clt_60442], null);
 
-//# sourceMappingURL=login.js.map?rel=1494353187560
+//# sourceMappingURL=login.js.map?rel=1510317471688

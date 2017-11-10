@@ -1,0 +1,2 @@
+aws ecr get-login --no-include-email --region eu-central-1 | sh
+docker tag mila/wesele-app:v0.1 818228774882.dkr.ecr.eu-MVVvTm1OcXVaeG50MVArcUErYVZPTzIwUnpZbUU3aGplT0central-1.amazonaws.com/mila/wesele-app:latest

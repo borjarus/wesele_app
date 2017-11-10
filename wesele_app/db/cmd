@@ -1,0 +1,1 @@
+mongodump --host "18.194.239.8:27017" --db wesele-app --archive=weseleapp-db.2017-11-10.gz --gzip

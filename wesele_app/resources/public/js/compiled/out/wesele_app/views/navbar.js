@@ -11,20 +11,20 @@ return null;
 }
 });
 wesele_app.views.navbar.inic_2_letters = (function wesele_app$views$navbar$inic_2_letters(n){
-var col = cljs.core.map.call(null,(function (p1__55735_SHARP_){
-return clojure.string.split.call(null,p1__55735_SHARP_,/\s+/);
-}),cljs.core.map.call(null,(function (p1__55736_SHARP_){
-return clojure.string.trim.call(null,p1__55736_SHARP_);
+var col = cljs.core.map.call(null,(function (p1__55229_SHARP_){
+return clojure.string.split.call(null,p1__55229_SHARP_,/\s+/);
+}),cljs.core.map.call(null,(function (p1__55230_SHARP_){
+return clojure.string.trim.call(null,p1__55230_SHARP_);
 }),clojure.string.split.call(null,n,/\|/)));
 return cljs.core.map.call(null,((function (col){
-return (function (p1__55737_SHARP_){
-return cljs.core.apply.call(null,cljs.core.str,p1__55737_SHARP_);
+return (function (p1__55231_SHARP_){
+return cljs.core.apply.call(null,cljs.core.str,p1__55231_SHARP_);
 });})(col))
 ,cljs.core.map.call(null,cljs.core.flatten,cljs.core.map.call(null,((function (col){
 return (function (c){
 return cljs.core.map.call(null,((function (col){
-return (function (p1__55738_SHARP_){
-return cljs.core.take.call(null,(2),p1__55738_SHARP_);
+return (function (p1__55232_SHARP_){
+return cljs.core.take.call(null,(2),p1__55232_SHARP_);
 });})(col))
 ,c);
 });})(col))
@@ -42,27 +42,27 @@ return and2;
 });
 wesele_app.views.navbar.get_menu_icon = (function wesele_app$views$navbar$get_menu_icon(){
 var active_link = re_frame.core.subscribe.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"active-panel","active-panel",-1802545994)], null));
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span.menu-icon","span.menu-icon",-986462898),(function (){var pred__55742 = cljs.core._EQ_;
-var expr__55743 = cljs.core.deref.call(null,active_link);
-if(cljs.core.truth_(pred__55742.call(null,new cljs.core.Keyword(null,"home-page","home-page",1804156194),expr__55743))){
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span.menu-icon","span.menu-icon",-986462898),(function (){var pred__55236 = cljs.core._EQ_;
+var expr__55237 = cljs.core.deref.call(null,active_link);
+if(cljs.core.truth_(pred__55236.call(null,new cljs.core.Keyword(null,"home-page","home-page",1804156194),expr__55237))){
 return "a";
 } else {
-if(cljs.core.truth_(pred__55742.call(null,new cljs.core.Keyword(null,"rsvp-page","rsvp-page",2134532812),expr__55743))){
+if(cljs.core.truth_(pred__55236.call(null,new cljs.core.Keyword(null,"rsvp-page","rsvp-page",2134532812),expr__55237))){
 return "d";
 } else {
-if(cljs.core.truth_(pred__55742.call(null,new cljs.core.Keyword(null,"church-page","church-page",1788377738),expr__55743))){
+if(cljs.core.truth_(pred__55236.call(null,new cljs.core.Keyword(null,"church-page","church-page",1788377738),expr__55237))){
 return "b";
 } else {
-if(cljs.core.truth_(pred__55742.call(null,new cljs.core.Keyword(null,"wedding-hall-page","wedding-hall-page",1494295634),expr__55743))){
+if(cljs.core.truth_(pred__55236.call(null,new cljs.core.Keyword(null,"wedding-hall-page","wedding-hall-page",1494295634),expr__55237))){
 return "c";
 } else {
-if(cljs.core.truth_(pred__55742.call(null,new cljs.core.Keyword(null,"gallery-page","gallery-page",-1458032316),expr__55743))){
+if(cljs.core.truth_(pred__55236.call(null,new cljs.core.Keyword(null,"gallery-page","gallery-page",-1458032316),expr__55237))){
 return "e";
 } else {
-if(cljs.core.truth_(pred__55742.call(null,new cljs.core.Keyword(null,"else","else",-1508377146),expr__55743))){
+if(cljs.core.truth_(pred__55236.call(null,new cljs.core.Keyword(null,"else","else",-1508377146),expr__55237))){
 return "a";
 } else {
-throw (new Error([cljs.core.str.cljs$core$IFn$_invoke$arity$1("No matching clause: "),cljs.core.str.cljs$core$IFn$_invoke$arity$1(expr__55743)].join('')));
+throw (new Error([cljs.core.str.cljs$core$IFn$_invoke$arity$1("No matching clause: "),cljs.core.str.cljs$core$IFn$_invoke$arity$1(expr__55237)].join('')));
 }
 }
 }
@@ -94,8 +94,8 @@ return null;
 }
 });})(menu,user))
 ,cljs.core.deref.call(null,menu))], null)], null),(((cljs.core.deref.call(null,user) == null))?new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.search-panel","div.search-panel",1701190536),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"i.fa.fa-lock","i.fa.fa-lock",-861743067),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"aria-hidden","aria-hidden",399337029),"true"], null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"input.form-control","input.form-control",-1123419636),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"type","type",1174270348),"text",new cljs.core.Keyword(null,"placeholder","placeholder",-104873083),"Login",new cljs.core.Keyword(null,"name","name",1843675177),"username",new cljs.core.Keyword(null,"id","id",-1388402092),"username",new cljs.core.Keyword(null,"on-key-press","on-key-press",-399563677),((function (menu,user){
-return (function (p1__55745_SHARP_){
-return wesele_app.views.navbar.handle_login.call(null,p1__55745_SHARP_,p1__55745_SHARP_.target.value,document.getElementById("password").value);
+return (function (p1__55239_SHARP_){
+return wesele_app.views.navbar.handle_login.call(null,p1__55239_SHARP_,p1__55239_SHARP_.target.value,document.getElementById("password").value);
 });})(menu,user))
 ], null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"input","input",556931961),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),"hidden",new cljs.core.Keyword(null,"value","value",305978217),"An1@&m1ReK",new cljs.core.Keyword(null,"name","name",1843675177),"password",new cljs.core.Keyword(null,"id","id",-1388402092),"password"], null)], null)], null):(function (){var nazwa = cljs.core.get.call(null,new cljs.core.Keyword(null,"details","details",1956795411).cljs$core$IFn$_invoke$arity$1(cljs.core.deref.call(null,user)),new cljs.core.Keyword(null,"nazwa","nazwa",-1360021634));
 return new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.search-panel","div.search-panel",1701190536),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"title","title",636505583),wesele_app.views.navbar.users_name.call(null,nazwa,(2))], null),wesele_app.views.navbar.users_name.call(null,nazwa,(1))," ",new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"i.fa.fa-user","i.fa.fa-user",382004105),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"aria-hidden","aria-hidden",399337029),"true",new cljs.core.Keyword(null,"title","title",636505583),wesele_app.views.navbar.users_name.call(null,nazwa,(2))], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"a","a",-2123407586),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"href","href",-793805698),"",new cljs.core.Keyword(null,"on-click","on-click",1632826543),((function (nazwa,menu,user){
@@ -110,4 +110,4 @@ return re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 2, 
 ;})(menu,user))
 });
 
-//# sourceMappingURL=navbar.js.map?rel=1495557438968
+//# sourceMappingURL=navbar.js.map?rel=1510317353565

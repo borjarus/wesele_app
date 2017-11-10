@@ -12,4 +12,4 @@ re_frame.core.reg_sub.call(null,new cljs.core.Keyword(null,"gallery-sub","galler
 return new cljs.core.Keyword(null,"gallery","gallery",1782868083).cljs$core$IFn$_invoke$arity$1(db);
 }));
 
-//# sourceMappingURL=gallery.js.map?rel=1494353192283
+//# sourceMappingURL=gallery.js.map?rel=1510317481533

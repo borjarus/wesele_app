@@ -1,13 +1,14 @@
 goog.addDependency("base.js", ['goog'], []);
 goog.addDependency("../cljs/core.js", ['cljs.core'], ['goog.string', 'goog.object', 'goog.math.Integer', 'goog.string.StringBuffer', 'goog.array', 'goog.math.Long']);
-goog.addDependency("../clojure/set.js", ['clojure.set'], ['cljs.core']);
+goog.addDependency("../clojure/string.js", ['clojure.string'], ['goog.string', 'cljs.core', 'goog.string.StringBuffer']);
+goog.addDependency("../cljs/stacktrace.js", ['cljs.stacktrace'], ['goog.string', 'cljs.core', 'clojure.string']);
 goog.addDependency("../devtools/protocols.js", ['devtools.protocols'], ['cljs.core']);
 goog.addDependency("../devtools/format.js", ['devtools.format'], ['cljs.core']);
 goog.addDependency("../devtools/defaults.js", ['devtools.defaults'], ['cljs.core']);
 goog.addDependency("../devtools/prefs.js", ['devtools.prefs'], ['cljs.core', 'devtools.defaults']);
 goog.addDependency("../devtools/version.js", ['devtools.version'], ['cljs.core']);
-goog.addDependency("../clojure/string.js", ['clojure.string'], ['goog.string', 'cljs.core', 'goog.string.StringBuffer']);
 goog.addDependency("../cljs/pprint.js", ['cljs.pprint'], ['goog.string', 'cljs.core', 'goog.string.StringBuffer', 'clojure.string']);
+goog.addDependency("../clojure/set.js", ['clojure.set'], ['cljs.core']);
 goog.addDependency("../clojure/data.js", ['clojure.data'], ['cljs.core', 'clojure.set']);
 goog.addDependency("../devtools/util.js", ['devtools.util'], ['cljs.core', 'devtools.version', 'goog.userAgent', 'cljs.pprint', 'devtools.defaults', 'clojure.data', 'devtools.prefs']);
 goog.addDependency("../devtools/munging.js", ['devtools.munging'], ['devtools.util', 'cljs.core', 'goog.object', 'goog.string.StringBuffer', 'clojure.string']);
@@ -20,7 +21,6 @@ goog.addDependency("../devtools/formatters/markup.js", ['devtools.formatters.mar
 goog.addDependency("../devtools/formatters/budgeting.js", ['devtools.formatters.budgeting'], ['devtools.formatters.helpers', 'devtools.formatters.markup', 'devtools.formatters.templating', 'devtools.formatters.state', 'cljs.core']);
 goog.addDependency("../devtools/formatters/core.js", ['devtools.formatters.core'], ['devtools.formatters.helpers', 'devtools.formatters.markup', 'devtools.formatters.templating', 'devtools.formatters.state', 'cljs.core', 'devtools.protocols', 'devtools.formatters.budgeting', 'devtools.format', 'devtools.prefs']);
 goog.addDependency("../devtools/toolbox.js", ['devtools.toolbox'], ['devtools.formatters.markup', 'devtools.formatters.templating', 'cljs.core', 'devtools.protocols']);
-goog.addDependency("../cljs/stacktrace.js", ['cljs.stacktrace'], ['goog.string', 'cljs.core', 'clojure.string']);
 goog.addDependency("../devtools/async.js", ['devtools.async'], ['cljs.core', 'goog.async.nextTick']);
 goog.addDependency("../devtools/formatters.js", ['devtools.formatters'], ['devtools.formatters.core', 'devtools.util', 'cljs.core', 'goog.labs.userAgent.browser', 'devtools.prefs']);
 goog.addDependency("../devtools/hints.js", ['devtools.hints'], ['cljs.stacktrace', 'cljs.core', 'devtools.prefs']);
@@ -126,4 +126,4 @@ goog.addDependency("../re_frisk/devtool.js", ['re_frisk.devtool'], ['re_frisk.ui
 goog.addDependency("../re_frisk/help.js", ['re_frisk.help'], ['cljs.core']);
 goog.addDependency("../re_frisk/core.js", ['re_frisk.core'], ['re_frisk.devtool', 're_frisk.ui', 'reagent.ratom', 'reagent.core', 're_frame.registrar', 'cljs.core', 're_frisk.data', 're_frisk.help', 're_frame.core']);
 goog.addDependency("../wesele_app/core.js", ['wesele_app.core'], ['wesele_app.views', 'wesele_app.routes', 'wesele_app.events', 'reagent.core', 'cljs.core', 'wesele_app.config', 'wesele_app.subs', 're_frisk.core', 're_frame.core']);
-goog.addDependency("../CCA4C8A.js", ['figwheel.connect.dev'], ['cljs.core', 'wesele_app.core', 'figwheel.client', 'figwheel.client.utils']);
+goog.addDependency("../2F32FD3.js", ['figwheel.connect.dev'], ['cljs.core', 'wesele_app.core', 'figwheel.client', 'figwheel.client.utils']);

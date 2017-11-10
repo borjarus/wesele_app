@@ -9,4 +9,4 @@ re_frame.core.reg_sub.call(null,new cljs.core.Keyword(null,"is-loading?","is-loa
 return new cljs.core.Keyword(null,"loading?","loading?",1905707049).cljs$core$IFn$_invoke$arity$1(db);
 }));
 
-//# sourceMappingURL=navbar.js.map?rel=1495133106469
+//# sourceMappingURL=navbar.js.map?rel=1510317481742

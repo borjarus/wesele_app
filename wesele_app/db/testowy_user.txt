@@ -1,0 +1,11 @@
+{
+    "rsvp2" : null,
+    "rsvp1" : null,
+    "il_os" : "2",
+    "password" : "An1@&m1ReK",
+    "mod" : "",
+    "grupa" : "ANIA",
+    "login" : "8378abc",
+    "is-rsvp2" : NumberLong(0),
+    "nazwa" : "Testowy TEST|OT"
+}

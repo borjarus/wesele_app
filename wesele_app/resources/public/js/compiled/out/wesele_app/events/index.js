@@ -11,15 +11,15 @@ var y = cljs.core.quot.call(null,a,b);
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [y,x], null);
 });
 wesele_app.events.index.wedding_countdown = (function wesele_app$events$index$wedding_countdown(s){
-var vec__59788 = wesele_app.events.index.quot_rem.call(null,s,(60));
-var m = cljs.core.nth.call(null,vec__59788,(0),null);
-var seconds = cljs.core.nth.call(null,vec__59788,(1),null);
-var vec__59791 = wesele_app.events.index.quot_rem.call(null,m,(60));
-var h = cljs.core.nth.call(null,vec__59791,(0),null);
-var minutes = cljs.core.nth.call(null,vec__59791,(1),null);
-var vec__59794 = wesele_app.events.index.quot_rem.call(null,h,(24));
-var days = cljs.core.nth.call(null,vec__59794,(0),null);
-var hours = cljs.core.nth.call(null,vec__59794,(1),null);
+var vec__56156 = wesele_app.events.index.quot_rem.call(null,s,(60));
+var m = cljs.core.nth.call(null,vec__56156,(0),null);
+var seconds = cljs.core.nth.call(null,vec__56156,(1),null);
+var vec__56159 = wesele_app.events.index.quot_rem.call(null,m,(60));
+var h = cljs.core.nth.call(null,vec__56159,(0),null);
+var minutes = cljs.core.nth.call(null,vec__56159,(1),null);
+var vec__56162 = wesele_app.events.index.quot_rem.call(null,h,(24));
+var days = cljs.core.nth.call(null,vec__56162,(0),null);
+var hours = cljs.core.nth.call(null,vec__56162,(1),null);
 return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [days,hours,minutes,seconds], null);
 });
 re_frame.core.reg_event_db.call(null,new cljs.core.Keyword(null,"set-wedding-counter","set-wedding-counter",894595243),(function (db,_){
@@ -27,4 +27,4 @@ var now = cljs_time.core.in_seconds.call(null,cljs_time.core.interval.call(null,
 return cljs.core.assoc.call(null,db,new cljs.core.Keyword(null,"wedding-counter","wedding-counter",-545242594),wesele_app.events.index.wedding_countdown.call(null,now));
 }));
 
-//# sourceMappingURL=index.js.map?rel=1494353156271
+//# sourceMappingURL=index.js.map?rel=1510317388517

@@ -6,23 +6,23 @@ goog.require('re_frame.loggers');
 re_frame.registrar.kinds = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"sub","sub",-2093760025),null,new cljs.core.Keyword(null,"event","event",301435442),null,new cljs.core.Keyword(null,"cofx","cofx",2013202907),null,new cljs.core.Keyword(null,"fx","fx",-1237829572),null], null), null);
 re_frame.registrar.kind__GT_id__GT_handler = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
 re_frame.registrar.get_handler = (function re_frame$registrar$get_handler(var_args){
-var args58120 = [];
-var len__44607__auto___58123 = arguments.length;
-var i__44608__auto___58124 = (0);
+var args54488 = [];
+var len__34447__auto___54491 = arguments.length;
+var i__34448__auto___54492 = (0);
 while(true){
-if((i__44608__auto___58124 < len__44607__auto___58123)){
-args58120.push((arguments[i__44608__auto___58124]));
+if((i__34448__auto___54492 < len__34447__auto___54491)){
+args54488.push((arguments[i__34448__auto___54492]));
 
-var G__58125 = (i__44608__auto___58124 + (1));
-i__44608__auto___58124 = G__58125;
+var G__54493 = (i__34448__auto___54492 + (1));
+i__34448__auto___54492 = G__54493;
 continue;
 } else {
 }
 break;
 }
 
-var G__58122 = args58120.length;
-switch (G__58122) {
+var G__54490 = args54488.length;
+switch (G__54490) {
 case 1:
 return re_frame.registrar.get_handler.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -36,7 +36,7 @@ return re_frame.registrar.get_handler.cljs$core$IFn$_invoke$arity$3((arguments[(
 
 break;
 default:
-throw (new Error([cljs.core.str.cljs$core$IFn$_invoke$arity$1("Invalid arity: "),cljs.core.str.cljs$core$IFn$_invoke$arity$1(args58120.length)].join('')));
+throw (new Error([cljs.core.str.cljs$core$IFn$_invoke$arity$1("Invalid arity: "),cljs.core.str.cljs$core$IFn$_invoke$arity$1(args54488.length)].join('')));
 
 }
 });
@@ -52,11 +52,11 @@ return cljs.core.get.call(null,cljs.core.get.call(null,cljs.core.deref.call(null
 re_frame.registrar.get_handler.cljs$core$IFn$_invoke$arity$3 = (function (kind,id,required_QMARK_){
 var handler = re_frame.registrar.get_handler.call(null,kind,id);
 if(re_frame.interop.debug_enabled_QMARK_){
-if(cljs.core.truth_((function (){var and__43482__auto__ = required_QMARK_;
-if(cljs.core.truth_(and__43482__auto__)){
+if(cljs.core.truth_((function (){var and__33322__auto__ = required_QMARK_;
+if(cljs.core.truth_(and__33322__auto__)){
 return (handler == null);
 } else {
-return and__43482__auto__;
+return and__33322__auto__;
 }
 })())){
 re_frame.loggers.console.call(null,new cljs.core.Keyword(null,"error","error",-978969032),"re-frame: no ",[cljs.core.str.cljs$core$IFn$_invoke$arity$1(kind)].join('')," handler registered for:",id);
@@ -84,23 +84,23 @@ cljs.core.swap_BANG_.call(null,re_frame.registrar.kind__GT_id__GT_handler,cljs.c
 return handler_fn;
 });
 re_frame.registrar.clear_handlers = (function re_frame$registrar$clear_handlers(var_args){
-var args58127 = [];
-var len__44607__auto___58130 = arguments.length;
-var i__44608__auto___58131 = (0);
+var args54495 = [];
+var len__34447__auto___54498 = arguments.length;
+var i__34448__auto___54499 = (0);
 while(true){
-if((i__44608__auto___58131 < len__44607__auto___58130)){
-args58127.push((arguments[i__44608__auto___58131]));
+if((i__34448__auto___54499 < len__34447__auto___54498)){
+args54495.push((arguments[i__34448__auto___54499]));
 
-var G__58132 = (i__44608__auto___58131 + (1));
-i__44608__auto___58131 = G__58132;
+var G__54500 = (i__34448__auto___54499 + (1));
+i__34448__auto___54499 = G__54500;
 continue;
 } else {
 }
 break;
 }
 
-var G__58129 = args58127.length;
-switch (G__58129) {
+var G__54497 = args54495.length;
+switch (G__54497) {
 case 0:
 return re_frame.registrar.clear_handlers.cljs$core$IFn$_invoke$arity$0();
 
@@ -114,7 +114,7 @@ return re_frame.registrar.clear_handlers.cljs$core$IFn$_invoke$arity$2((argument
 
 break;
 default:
-throw (new Error([cljs.core.str.cljs$core$IFn$_invoke$arity$1("Invalid arity: "),cljs.core.str.cljs$core$IFn$_invoke$arity$1(args58127.length)].join('')));
+throw (new Error([cljs.core.str.cljs$core$IFn$_invoke$arity$1("Invalid arity: "),cljs.core.str.cljs$core$IFn$_invoke$arity$1(args54495.length)].join('')));
 
 }
 });
@@ -148,4 +148,4 @@ return re_frame.loggers.console.call(null,new cljs.core.Keyword(null,"warn","war
 re_frame.registrar.clear_handlers.cljs$lang$maxFixedArity = 2;
 
 
-//# sourceMappingURL=registrar.js.map?rel=1494353127570
+//# sourceMappingURL=registrar.js.map?rel=1510317320672

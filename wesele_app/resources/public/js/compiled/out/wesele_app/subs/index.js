@@ -6,4 +6,4 @@ re_frame.core.reg_sub.call(null,new cljs.core.Keyword(null,"wedding-counter","we
 return new cljs.core.Keyword(null,"wedding-counter","wedding-counter",-545242594).cljs$core$IFn$_invoke$arity$1(db);
 }));
 
-//# sourceMappingURL=index.js.map?rel=1494353192737
+//# sourceMappingURL=index.js.map?rel=1510317482121

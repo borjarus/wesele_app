@@ -3,4 +3,4 @@ goog.provide('wesele_app.config');
 goog.require('cljs.core');
 wesele_app.config.debug_QMARK_ = goog.DEBUG;
 
-//# sourceMappingURL=config.js.map?rel=1494353192096
+//# sourceMappingURL=config.js.map?rel=1510317481390

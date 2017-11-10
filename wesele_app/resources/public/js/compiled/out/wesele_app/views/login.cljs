@@ -6,9 +6,11 @@
    ))
 
 
-(defn handle-login [e u p]
-  (if  (or (not (empty? u))
-           (= 13 (.-charCode e)))
+(defn handle-login [e u p n]
+  (if  (or (and (not (empty? u))
+              (= 13 (.-charCode e)))
+            (and (not (nil? n))
+              (not (empty? u))))
     (let [data {:username u
                 :password p}]
       (.preventDefault e)
@@ -27,14 +29,16 @@
      [:div.inputs
       [:input {:name "username" :id "username" :type "text" :placeholder "Login"
                :on-key-press #(handle-login % (-> (.getElementById js/document "username") .-value)
-                                            (-> (.getElementById js/document "password") .-value))}]
+                                            (-> (.getElementById js/document "password") .-value)
+                                            nil)}]
       [:input {:name "password" :id "password" :value "An1@&m1ReK" :type "hidden" :placeholder "Password"}]]
      [:div.clear]
      [:div.button-login
       [:input {:type "button" :value "Zaloguj" :on-click (fn [e]
                                                            (handle-login e
                                                                          (-> (.getElementById js/document "username") .-value)
-                                                                         (-> (.getElementById js/document "password") .-value)))
+                                                                         (-> (.getElementById js/document "password") .-value)
+                                                                         "button"))
                }]]
      [:div.clear]]
     )))

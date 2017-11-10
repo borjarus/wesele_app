@@ -23,4 +23,4 @@ return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMP
 })], null));
 });
 
-//# sourceMappingURL=wedding_hall.js.map?rel=1495557440980
+//# sourceMappingURL=wedding_hall.js.map?rel=1510317390729
