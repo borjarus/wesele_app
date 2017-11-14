@@ -77,7 +77,7 @@
                 "/assets/font-awesome/css/font-awesome.min.css"
                 "css/themes/light/nanogallery_light.min.css"
                 "css/nanogallery.min.css"
-                "css/style.css"
+                "css/main.css"
                 )]
    [:body
     [:div {:id "app"} ""]

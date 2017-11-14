@@ -1,2 +1,4 @@
 aws ecr get-login --no-include-email --region eu-central-1 | sh
-docker tag mila/wesele-app:v0.1 818228774882.dkr.ecr.eu-MVVvTm1OcXVaeG50MVArcUErYVZPTzIwUnpZbUU3aGplT0central-1.amazonaws.com/mila/wesele-app:latest
+docker tag mila/wesele-app:latest 818228774882.dkr.ecr.eu-central-1.amazonaws.com/mila/wesele-app:latest
+docker push 818228774882.dkr.ecr.eu-central-1.amazonaws.com/mila/wesele-app:latest
+ssh -i ~/mila.pem ec2-user@18.194.239.8

@@ -13,3 +13,4 @@ resources/public/js/compiled/
 .nrepl-port
 wesele_app/Docker/
 wesele_app/Visible
+*.gz

@@ -43,7 +43,7 @@
                  ]
 
   :plugins [[lein-cljsbuild "1.1.4"]
-            [lein-garden "0.2.8"]]
+            [lein-garden "0.3.0"]]
 
   :min-lein-version "2.5.3"
 
@@ -57,11 +57,11 @@
   :figwheel {:css-dirs ["resources/public/css"]
              :ring-handler wesele-app.handler/dev-handler}
 
-  :garden {:builds [{:id           "screen"
+  :garden {:builds [{:id           "css"
                      :source-paths ["src/clj"]
-                     :stylesheet   wesele-app.css/screen
-                     :compiler     {:output-to     "resources/public/css/screen.css"
-                                    :pretty-print? true}}]}
+                     :stylesheet   wesele-app.css/css
+                     :compiler     {:output-to     "resources/public/css/main.css"
+                                    :pretty-print? false}}]}
 
   :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
 

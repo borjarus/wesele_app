@@ -1,9 +1,9 @@
 version: '3.4'
 services:
   web:
-    image: mila/wesele-app:v0.1
-    #volumes:
-      #- .:/w
+    image: mila/wesele-app
+    volumes:
+      - .:/w
     ports:
       - 10535:10535
       - 3449:3449
