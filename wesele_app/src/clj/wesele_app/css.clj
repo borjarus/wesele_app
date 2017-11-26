@@ -13,7 +13,15 @@
 (def color-primary-3 "#71266E")
 (def color-primary-4 "#550E52")
 (def color-primary-5 "#390036")
-(def color-dropshadow-1 "#662562")
+  (def color-dropshadow-1 "#8775aa")
+
+;; new colors
+
+(def color-body-bg "#DFDBE5")
+  (def color-primary-n-0 "#AA9BC6")
+  (def color-primary-n-1 "#F1EFF4")
+
+  (def color-text-1 "#783276")
 
 ;; font-face styles 
 (d/defstyles css
@@ -31,12 +39,19 @@
 
 
 ;; body
-  [:body {:background-color color-primary-0
-          :background-image "url(\"data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.76' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E\")"}]
+[:body {:background-color color-body-bg
+        ;; :background-image "url('../img/diagonal-lines.svg')"
+        }]
 
 ;; h1 style
-[:h1 {:text-decoration "underline"
-     :font-family "'Didact Gothic regular'"}]
+  [:h1 {:padding-bottom "0.6em"
+        :padding-top "0.2em"
+        :font-family "'Didact Gothic regular'"}]
+
+[:.container_bg {:background #{"-moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(245,245,245,1) 51%, rgba(236,236,236,1) 100%)"
+                                "-webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(245,245,245,1) 51%,rgba(236,236,236,1) 100%)"
+                                "linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(245,245,245,1) 51%,rgba(236,236,236,1) 100%)"}
+                  :filter "progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ececec',GradientType=0 )"}]
 
 ;; navbar style
 [:.main-navbar
@@ -183,7 +198,7 @@
 
 ;; -- LOGIN STYLES --
  [:.form-login
-  {:background color-primary-1
+  {:background color-primary-n-1
    :right "0px"
    :margin "0px auto"
    :margin-top "100px"
@@ -192,12 +207,12 @@
 
  [:.header
   {:height "60px"
-   :background color-primary-3
+   :background color-primary-n-0
    :text-align "center"
    :font-size "18px"
    :font-weight "bold"
    :text-transform "uppercase"
-   :color color-primary-1}
+   :color color-text-1}
    [:span
     {:padding-top "20px"
      :float "left"
@@ -234,7 +249,7 @@
   [(s/input (s/attr= :type :text))
    {:width "360px"
     :height "45px"
-    :background "#1b1b1b"
+    :background "#1b1b1bcc"
     :color "#4d4d4d"
     :font-size "16px"
     :margin-top "15px"
@@ -260,7 +275,7 @@
     :position "relative"
     :cursor "pointer"
     :border-radius "5px"
-    :color color-primary-1
+    :color color-text-1
     :border 0
     :box-shadow
     (str "inset 0 1px " color-dropshadow-1 ","
@@ -270,7 +285,7 @@
           "0 2px " color-dropshadow-1 ","
           "0 3px " color-dropshadow-1 ","
           "0 4px 2px rgba(0,0,0,0.0)")
-    :background color-primary-3}
+    :background color-primary-n-0}
     [:&:hover {:opacity "0.9"}]
     [:&:active
      {:top "3px"

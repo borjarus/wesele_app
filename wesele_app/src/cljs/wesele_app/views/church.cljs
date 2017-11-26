@@ -31,10 +31,18 @@
     (fn []
       [:div
        [nav-bar]
-       [:div.container
+       [:div.container.container_bg
         [:div.row
          [:div.col-md-12
-          [:h1 "CHURCH PAGE"]]]
+          [:h1.display-3 "Kościół"]]]
+        [:div.row
+         [:div.col-md-12
+          [:p.lead "Uroczystość zawarcia Sakramentu Małżeństwa, odbędzie się dnia 18 sierpnia 2018 roku o godzinie
+17.00 w Bazylice pw. św. Jana Chrzciciela przy ul. Bogurodzicy w Szczecinie."]
+          [:p.lead "Na poniższej mapie znajduje się lokalizacja Bazyliki, abyście drodzy goście, mogli do nas bez problemu
+dotrzeć."]]]
+        [:div.row
+         [:p ""]]
         [:div.row
          [:div.col-md-8.offset-md-2 [map-view]]]]]
       )}))

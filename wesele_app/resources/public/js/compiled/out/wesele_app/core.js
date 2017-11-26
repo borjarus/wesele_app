@@ -11,10 +11,15 @@ goog.require('wesele_app.config');
 goog.require('re_frisk.core');
 jQuery(window).scroll((function (){
 var st = jQuery(document).scrollTop();
-if((st >= (195))){
-return jQuery(".navbar.main-navbar").addClass("fixed-top");
+if((st > (195))){
+jQuery(".navbar.main-navbar").addClass("fixed-top");
 } else {
+}
+
+if((st < (170))){
 return jQuery(".navbar.main-navbar").removeClass("fixed-top");
+} else {
+return null;
 }
 }));
 wesele_app.core.dev_setup = (function wesele_app$core$dev_setup(){
@@ -44,4 +49,4 @@ return wesele_app.core.mount_root.call(null);
 });
 goog.exportSymbol('wesele_app.core.init', wesele_app.core.init);
 
-//# sourceMappingURL=core.js.map?rel=1510319813649
+//# sourceMappingURL=core.js.map?rel=1511708183578

@@ -77,9 +77,10 @@
                 "/assets/font-awesome/css/font-awesome.min.css"
                 "css/themes/light/nanogallery_light.min.css"
                 "css/nanogallery.min.css"
+                "css/additional.css"
                 "css/main.css"
                 )]
-   [:body
+   [:body.diagonal-line-bg
     [:div {:id "app"} ""]
     (include-js "/assets/jquery/jquery.min.js"
                 "js/jquery.nanogallery.min.js"

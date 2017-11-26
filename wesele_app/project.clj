@@ -61,7 +61,7 @@
                      :source-paths ["src/clj"]
                      :stylesheet   wesele-app.css/css
                      :compiler     {:output-to     "resources/public/css/main.css"
-                                    :pretty-print? false}}]}
+                                    :pretty-print? true}}]}
 
   :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
 

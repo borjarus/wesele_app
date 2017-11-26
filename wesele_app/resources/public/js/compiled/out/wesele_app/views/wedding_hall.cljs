@@ -31,10 +31,17 @@
     (fn []
       [:div
        [nav-bar]
-       [:div.container
+       [:div.container.container_bg
         [:div.row
          [:div.col-md-12
-          [:h1 "WEDDING HALL PAGE"]]]
+          [:h1.display-3 "Sala weselna"]]]
+        [:div.row
+         [:div.col-md-12
+          [:p "Po uroczystości będziemy bawić się i radować wspólnie w pięknej sali weselnej Lila Park w Kościnie,
+znajdującej się 15 km od centrum Szczecina."]
+[:p "Na poniższej mapie znajduje się lokalizacja Sali, abyście mili goście mogli być tam szybko razem z nami."]]]
+        [:div.row
+         [:p ""]]
         [:div.row
          [:div.col-md-8.offset-md-2 [map-view]]]]]
       )}))

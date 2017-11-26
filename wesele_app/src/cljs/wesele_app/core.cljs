@@ -11,10 +11,11 @@
 (.scroll (js/jQuery js/window)
          (fn []
            (let [st (.scrollTop (js/jQuery js/document))]
-             (if (>= st 195)
-               (.addClass (js/jQuery ".navbar.main-navbar") "fixed-top")
-               (.removeClass (js/jQuery ".navbar.main-navbar") "fixed-top")
-               ))))
+             (if (> st 195)
+               (.addClass (js/jQuery ".navbar.main-navbar") "fixed-top"))
+             (if (< st 170)
+               (.removeClass (js/jQuery ".navbar.main-navbar") "fixed-top"))
+               )))
 
 
 
