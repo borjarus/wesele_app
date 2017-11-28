@@ -238,8 +238,7 @@
    :text-align "center"}
   [:img
    {:width "180px"
-    :height "180px"
-    :border-radius "180px"}]]
+    :height "180px"}]]
 
  [:.inputs
   {
@@ -292,7 +291,23 @@
       :background "#e84c3d"
       :box-shadow "inset 0 1px 2px #ba3c30"}]]]
 
+  ;; GIFTS STYLES
+  
+  [:ul.gifts-special
+   {:list-style "none"
+    :padding 0}
+   [:li {:font-weight "bold"}
+    [:ol :li {:font-weight "normal"}]]]
 
+  [(s/> :ul.gifts-special :li)  {:padding-left "2em"}
+   [:&:before
+    {:font-family "'FontAwesome'"
+     :display "inline-block"
+     :margin-left "-1.3em"
+     :width "1.3em"}]
+   [:&.beer:before {:content "'\\f0fc'"}]
+   [:&.book:before {:content "'\\f02d'"}]
+   ]
 
 
   )

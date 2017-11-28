@@ -21,26 +21,26 @@ return re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 1, 
 }),(1000));
 });
 wesele_app.views.index.func_a = (function wesele_app$views$index$func_a(name,state){
-var vec__56173 = state;
-var d = cljs.core.nth.call(null,vec__56173,(0),null);
-var h = cljs.core.nth.call(null,vec__56173,(1),null);
-var m = cljs.core.nth.call(null,vec__56173,(2),null);
-var s = cljs.core.nth.call(null,vec__56173,(3),null);
-var pred__56176 = cljs.core._EQ_;
-var expr__56177 = name;
-if(cljs.core.truth_(pred__56176.call(null,new cljs.core.Keyword(null,"d","d",1972142424),expr__56177))){
+var vec__9485 = state;
+var d = cljs.core.nth.call(null,vec__9485,(0),null);
+var h = cljs.core.nth.call(null,vec__9485,(1),null);
+var m = cljs.core.nth.call(null,vec__9485,(2),null);
+var s = cljs.core.nth.call(null,vec__9485,(3),null);
+var pred__9488 = cljs.core._EQ_;
+var expr__9489 = name;
+if(cljs.core.truth_(pred__9488.call(null,new cljs.core.Keyword(null,"d","d",1972142424),expr__9489))){
 return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [d,(730),"dni"], null);
 } else {
-if(cljs.core.truth_(pred__56176.call(null,new cljs.core.Keyword(null,"h","h",1109658740),expr__56177))){
+if(cljs.core.truth_(pred__9488.call(null,new cljs.core.Keyword(null,"h","h",1109658740),expr__9489))){
 return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [h,(24),"godzin"], null);
 } else {
-if(cljs.core.truth_(pred__56176.call(null,new cljs.core.Keyword(null,"m","m",1632677161),expr__56177))){
+if(cljs.core.truth_(pred__9488.call(null,new cljs.core.Keyword(null,"m","m",1632677161),expr__9489))){
 return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [m,(60),"minut"], null);
 } else {
-if(cljs.core.truth_(pred__56176.call(null,new cljs.core.Keyword(null,"s","s",1705939918),expr__56177))){
+if(cljs.core.truth_(pred__9488.call(null,new cljs.core.Keyword(null,"s","s",1705939918),expr__9489))){
 return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [s,(60),"sekund"], null);
 } else {
-throw (new Error([cljs.core.str.cljs$core$IFn$_invoke$arity$1("No matching clause: "),cljs.core.str.cljs$core$IFn$_invoke$arity$1(expr__56177)].join('')));
+throw (new Error([cljs.core.str.cljs$core$IFn$_invoke$arity$1("No matching clause: "),cljs.core.str.cljs$core$IFn$_invoke$arity$1(expr__9489)].join('')));
 }
 }
 }
@@ -59,10 +59,10 @@ var db = cljs.core.atom.call(null,new cljs.core.PersistentArrayMap(null, 1, [new
 return reagent.core.create_class.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"component-did-mount","component-did-mount",-1126910518),((function (db){
 return (function (){
 var state = re_frame.core.subscribe.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"wedding-counter","wedding-counter",-545242594)], null));
-var vec__56188 = wesele_app.views.index.func_a.call(null,typ,cljs.core.deref.call(null,state));
-var val = cljs.core.nth.call(null,vec__56188,(0),null);
-var max_val = cljs.core.nth.call(null,vec__56188,(1),null);
-var _ = cljs.core.nth.call(null,vec__56188,(2),null);
+var vec__9500 = wesele_app.views.index.func_a.call(null,typ,cljs.core.deref.call(null,state));
+var val = cljs.core.nth.call(null,vec__9500,(0),null);
+var max_val = cljs.core.nth.call(null,vec__9500,(1),null);
+var _ = cljs.core.nth.call(null,vec__9500,(2),null);
 var t = cljs.core.name.call(null,typ);
 var ___$1 = cljs.core.swap_BANG_.call(null,db,cljs.core.assoc,new cljs.core.Keyword(null,"countdown","countdown",-1468813996),wesele_app.views.index.countdown_run.call(null));
 return wesele_app.views.index.update_countdown_status.call(null,t,val,max_val);
@@ -70,10 +70,10 @@ return wesele_app.views.index.update_countdown_status.call(null,t,val,max_val);
 ,new cljs.core.Keyword(null,"component-did-update","component-did-update",-1468549173),((function (db){
 return (function (){
 var state = re_frame.core.subscribe.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"wedding-counter","wedding-counter",-545242594)], null));
-var vec__56191 = wesele_app.views.index.func_a.call(null,typ,cljs.core.deref.call(null,state));
-var val = cljs.core.nth.call(null,vec__56191,(0),null);
-var max_val = cljs.core.nth.call(null,vec__56191,(1),null);
-var _ = cljs.core.nth.call(null,vec__56191,(2),null);
+var vec__9503 = wesele_app.views.index.func_a.call(null,typ,cljs.core.deref.call(null,state));
+var val = cljs.core.nth.call(null,vec__9503,(0),null);
+var max_val = cljs.core.nth.call(null,vec__9503,(1),null);
+var _ = cljs.core.nth.call(null,vec__9503,(2),null);
 var t = cljs.core.name.call(null,typ);
 return wesele_app.views.index.update_countdown_status.call(null,t,val,max_val);
 });})(db))
@@ -86,10 +86,10 @@ return cljs.core.swap_BANG_.call(null,db,cljs.core.assoc,new cljs.core.Keyword(n
 ,new cljs.core.Keyword(null,"reagent-render","reagent-render",-985383853),((function (db){
 return (function (){
 var state = re_frame.core.subscribe.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"wedding-counter","wedding-counter",-545242594)], null));
-var vec__56194 = wesele_app.views.index.func_a.call(null,typ,cljs.core.deref.call(null,state));
-var val = cljs.core.nth.call(null,vec__56194,(0),null);
-var _ = cljs.core.nth.call(null,vec__56194,(1),null);
-var namex = cljs.core.nth.call(null,vec__56194,(2),null);
+var vec__9506 = wesele_app.views.index.func_a.call(null,typ,cljs.core.deref.call(null,state));
+var val = cljs.core.nth.call(null,vec__9506,(0),null);
+var _ = cljs.core.nth.call(null,vec__9506,(1),null);
+var namex = cljs.core.nth.call(null,vec__9506,(2),null);
 return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.clock","div.clock",297094939),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"svg","svg",856789142),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"path","path",-188191168),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"class","class",-2030961996),[cljs.core.str.cljs$core$IFn$_invoke$arity$1("time-out time-out-"),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.name.call(null,typ))].join(''),new cljs.core.Keyword(null,"d","d",1972142424),"m 80, 6 a 50,50 0 1,0 0,120 a 50,50 0 1,0 0,-120"], null)], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.content","div.content",-298042649),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.seconds","div.seconds",-369940629),val], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.sec-text","div.sec-text",-832984684),namex], null)], null)], null);
 });})(db))
 ], null));
@@ -103,4 +103,4 @@ return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMP
 ;})(wedding_counter))
 });
 
-//# sourceMappingURL=index.js.map?rel=1510317389759
+//# sourceMappingURL=index.js.map?rel=1511877926550

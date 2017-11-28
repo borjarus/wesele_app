@@ -25,13 +25,13 @@ return true;
 re_frame.core.reg_event_db.call(null,new cljs.core.Keyword(null,"initialize-db","initialize-db",230998432),(function (_,___$1){
 return wesele_app.db.default_db;
 }));
-re_frame.core.reg_event_db.call(null,new cljs.core.Keyword(null,"set-active-panel","set-active-panel",-965871124),(function (db,p__60808){
-var vec__60809 = p__60808;
-var _ = cljs.core.nth.call(null,vec__60809,(0),null);
-var active_panel = cljs.core.nth.call(null,vec__60809,(1),null);
+re_frame.core.reg_event_db.call(null,new cljs.core.Keyword(null,"set-active-panel","set-active-panel",-965871124),(function (db,p__14883){
+var vec__14884 = p__14883;
+var _ = cljs.core.nth.call(null,vec__14884,(0),null);
+var active_panel = cljs.core.nth.call(null,vec__14884,(1),null);
 wesele_app.events.check_user.call(null);
 
 return cljs.core.assoc.call(null,db,new cljs.core.Keyword(null,"active-panel","active-panel",-1802545994),active_panel);
 }));
 
-//# sourceMappingURL=events.js.map?rel=1510317481202
+//# sourceMappingURL=events.js.map?rel=1511875554698

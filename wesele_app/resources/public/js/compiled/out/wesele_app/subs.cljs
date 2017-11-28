@@ -16,6 +16,11 @@
  (fn [db _]
    (:active-panel db)))
 
+(re-frame/reg-sub
+ :pre-gallery
+ (fn [db]
+   (:pre-gallery db)))
+
 
 ;; ========================= REGISTER SUBS ==================================
 

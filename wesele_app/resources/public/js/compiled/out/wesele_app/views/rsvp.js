@@ -24,10 +24,10 @@ return reagent.core.create_class.call(null,new cljs.core.PersistentArrayMap(null
 return (function (this$){
 var elem = document.querySelector([cljs.core.str.cljs$core$IFn$_invoke$arity$1("#"),cljs.core.str.cljs$core$IFn$_invoke$arity$1(n)].join(''));
 var user_db = re_frame.core.subscribe.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"get-user","get-user",-990309598)], null));
-var vec__59719 = reagent.core.argv.call(null,this$);
-var _ = cljs.core.nth.call(null,vec__59719,(0),null);
-var n__$1 = cljs.core.nth.call(null,vec__59719,(1),null);
-var v = cljs.core.nth.call(null,vec__59719,(2),null);
+var vec__13557 = reagent.core.argv.call(null,this$);
+var _ = cljs.core.nth.call(null,vec__13557,(0),null);
+var n__$1 = cljs.core.nth.call(null,vec__13557,(1),null);
+var v = cljs.core.nth.call(null,vec__13557,(2),null);
 var typ = clojure.string.lower_case.call(null,n__$1);
 wesele_app.views.rsvp.switchery_change_event.call(null,typ,n__$1,elem,user_db);
 
@@ -39,10 +39,10 @@ return cljs.core.swap_BANG_.call(null,comp,cljs.core.assoc,new cljs.core.Keyword
 return (function (this$){
 var elem = document.querySelector([cljs.core.str.cljs$core$IFn$_invoke$arity$1("#"),cljs.core.str.cljs$core$IFn$_invoke$arity$1(n)].join(''));
 var user_db = re_frame.core.subscribe.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"get-user","get-user",-990309598)], null));
-var vec__59722 = reagent.core.argv.call(null,this$);
-var _ = cljs.core.nth.call(null,vec__59722,(0),null);
-var n__$1 = cljs.core.nth.call(null,vec__59722,(1),null);
-var v = cljs.core.nth.call(null,vec__59722,(2),null);
+var vec__13560 = reagent.core.argv.call(null,this$);
+var _ = cljs.core.nth.call(null,vec__13560,(0),null);
+var n__$1 = cljs.core.nth.call(null,vec__13560,(1),null);
+var v = cljs.core.nth.call(null,vec__13560,(2),null);
 return wesele_app.views.rsvp.check_checkbox.call(null,elem,v);
 });})(comp))
 ,new cljs.core.Keyword(null,"display-name","display-name",694513143),"ios-swichery",new cljs.core.Keyword(null,"reagent-render","reagent-render",-985383853),((function (comp){
@@ -63,4 +63,4 @@ return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMP
 ;})(user,r1,r2,is_rsvp2))
 });
 
-//# sourceMappingURL=rsvp.js.map?rel=1510317453549
+//# sourceMappingURL=rsvp.js.map?rel=1511877978310

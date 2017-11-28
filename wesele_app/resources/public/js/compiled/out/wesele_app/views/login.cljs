@@ -25,7 +25,7 @@
      [:div.header
       [:span "Zaloguj się"]]
      [:div.avatar
-      [:img {:src "img/logotyp.svg" :alt ""}]]
+      [:img {:src "img/logotyp.png" :alt ""}]]
      [:div.inputs
       [:input {:name "username" :id "username" :type "text" :placeholder "Login"
                :on-key-press #(handle-login % (-> (.getElementById js/document "username") .-value)

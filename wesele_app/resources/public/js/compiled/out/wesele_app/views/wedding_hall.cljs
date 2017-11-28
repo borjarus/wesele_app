@@ -34,12 +34,12 @@
        [:div.container.container_bg
         [:div.row
          [:div.col-md-12
-          [:h1.display-3 "Sala weselna"]]]
+          [:p.pt-4 ""]]]
         [:div.row
          [:div.col-md-12
-          [:p "Po uroczystości będziemy bawić się i radować wspólnie w pięknej sali weselnej Lila Park w Kościnie,
+          [:p.lead.text-center "Po uroczystości będziemy bawić się i radować wspólnie w pięknej sali weselnej Lila Park w Kościnie,
 znajdującej się 15 km od centrum Szczecina."]
-[:p "Na poniższej mapie znajduje się lokalizacja Sali, abyście mili goście mogli być tam szybko razem z nami."]]]
+[:p.lead.text-center "Mili goście, na poniższej mapie znajduje się lokalizacja sali, abyście szybko i bez trudu dotarli na wesele."]]]
         [:div.row
          [:p ""]]
         [:div.row

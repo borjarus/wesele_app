@@ -9,6 +9,7 @@ goog.require('wesele_app.views.wedding_hall');
 goog.require('wesele_app.views.gallery');
 goog.require('wesele_app.views.login');
 goog.require('wesele_app.views.rsvp');
+goog.require('wesele_app.views.gifts');
 if(typeof wesele_app.views.panels !== 'undefined'){
 } else {
 wesele_app.views.panels = (function (){var method_table__7698__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
@@ -40,6 +41,9 @@ return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMP
 cljs.core._add_method.call(null,wesele_app.views.panels,new cljs.core.Keyword(null,"gallery-page","gallery-page",-1458032316),(function (){
 return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [wesele_app.views.gallery.gallery_page], null);
 }));
+cljs.core._add_method.call(null,wesele_app.views.panels,new cljs.core.Keyword(null,"gifts-page","gifts-page",-826646564),(function (){
+return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [wesele_app.views.gifts.gifts_page], null);
+}));
 cljs.core._add_method.call(null,wesele_app.views.panels,new cljs.core.Keyword(null,"default","default",-1987822328),(function (){
 return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632)], null);
 }));
@@ -55,4 +59,4 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
 ;})(active_panel))
 });
 
-//# sourceMappingURL=views.js.map?rel=1511708181774
+//# sourceMappingURL=views.js.map?rel=1511877984090

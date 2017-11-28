@@ -3,11 +3,11 @@
 (def default-db
   {:menu [
           {:title "Home" :href "#/" :id "navbar-1" :sname "home-page" :on-off 1}
-          {:title "RSVP" :href "#/rsvp" :id "navbar-2" :sname "rsvp-page" :on-off 1}
+          {:title "RSVP" :href "#/rsvp" :id "navbar-2" :sname "rsvp-page" :on-off 0}
           {:title "Kościół" :href "#/church" :id "navbar-3" :sname "church-page" :on-off 1}
           {:title "Sala weselna" :href "#/wedding-hall" :id "navbar-4" :sname "wedding-hall-page" :on-off 1}
           {:title "Galeria" :href "#/galeria" :id "navbar-5" :sname "gallery-page" :on-off 1}
-          ]
+          {:title "Gdzie kupić prezent?" :href "#/gifts" :id "navbar-6" :sname "gifts-page" :on-off 1}]
    :gallery {:thumbnailWidth "auto"
              :thumbnailHeight 200
              :colorScheme "none"
@@ -24,4 +24,5 @@
                               :align "center"}
              :items nil}
    :wedding-counter []
-   :user nil})
+   :user nil
+   :pre-gallery 1})

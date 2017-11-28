@@ -51,5 +51,10 @@
         (re-frame/dispatch [:request-gallery "gallery/1"])
         (re-frame/dispatch [:set-active-panel :gallery-page]))))
 
+  (defroute "/gifts" []
+    (if (false? (check-login-time))
+      (re-frame/dispatch [:set-active-panel :login-page])
+      (re-frame/dispatch [:set-active-panel :gifts-page])))
+
   ;; --------------------
   (hook-browser-navigation!))

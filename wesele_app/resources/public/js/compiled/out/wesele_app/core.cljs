@@ -8,16 +8,14 @@
               [wesele-app.config :as config]
               [re-frisk.core :refer [enable-re-frisk!]]))
 
-(.scroll (js/jQuery js/window)
-         (fn []
-           (let [st (.scrollTop (js/jQuery js/document))]
-             (if (> st 195)
-               (.addClass (js/jQuery ".navbar.main-navbar") "fixed-top"))
-             (if (< st 170)
-               (.removeClass (js/jQuery ".navbar.main-navbar") "fixed-top"))
-               )))
-
-
+(defn scroll-event []
+  (.scroll (js/jQuery js/window)
+          (fn []
+            (let [st (.scrollTop (js/jQuery js/document))]
+              (if (> st 195)
+                (.addClass (js/jQuery ".navbar.main-navbar") "fixed-top"))
+              (if (< st 170)
+                (.removeClass (js/jQuery ".navbar.main-navbar") "fixed-top"))))))
 
 (defn dev-setup []
   (when config/debug?
@@ -33,5 +31,6 @@
   (routes/app-routes)
   (re-frame/dispatch-sync [:initialize-db])
   (dev-setup)
+  (scroll-event)
   (wesele-app.events/check-user)
   (mount-root))

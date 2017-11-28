@@ -5,7 +5,6 @@
             [cljs.core.async :refer [<!]]
             [cognitect.transit :as t]
             [re-frame.core :as rf]
-
             [re-frame.core :as re-frame])
   (:require-macros [cljs.core.async.macros :refer [go]]))
 
@@ -29,22 +28,27 @@
 
 
 (defn gallery-page []
+  (let [pre-gallery (re-frame/subscribe [:pre-gallery])]
     (r/create-class
      {:display-name "gallery"
       :reagent-render
       (fn []
         [:div
          [nav-bar]
-       [:div.container
-        [:div.row
+         [:div.container.container_bg
+          [:div.row
            [:div.col-md-12
-            [:h1 "GALLERY PAGE"]]]
-        [:div.row
-         (tag-ling-sample-generator 5)]
-        [:div.row
-         [:div.col-md-12
-          [:div#wedding-gallery]
-          ]]]])}))
+            [:p.pt-4 ""]]]
+          (if (= @pre-gallery 1)
+            [:div.row
+             [:div.col-md-12
+              [:p.lead.text-center "W tym miejscu postaramy się zebrać fotogalerię, abyście mogli przeżyć te weselne chwile jeszcze raz."]]]
+            [:div.row
+             (tag-ling-sample-generator 5)])
+          [:div.row
+           [:div.col-md-12
+            [:div#wedding-gallery]
+            ]]]])})))
 
 
 

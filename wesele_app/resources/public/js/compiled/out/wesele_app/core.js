@@ -9,7 +9,8 @@ goog.require('wesele_app.routes');
 goog.require('wesele_app.views');
 goog.require('wesele_app.config');
 goog.require('re_frisk.core');
-jQuery(window).scroll((function (){
+wesele_app.core.scroll_event = (function wesele_app$core$scroll_event(){
+return jQuery(window).scroll((function (){
 var st = jQuery(document).scrollTop();
 if((st > (195))){
 jQuery(".navbar.main-navbar").addClass("fixed-top");
@@ -22,6 +23,7 @@ return jQuery(".navbar.main-navbar").removeClass("fixed-top");
 return null;
 }
 }));
+});
 wesele_app.core.dev_setup = (function wesele_app$core$dev_setup(){
 if(cljs.core.truth_(wesele_app.config.debug_QMARK_)){
 cljs.core.enable_console_print_BANG_.call(null);
@@ -43,10 +45,12 @@ re_frame.core.dispatch_sync.call(null,new cljs.core.PersistentVector(null, 1, 5,
 
 wesele_app.core.dev_setup.call(null);
 
+wesele_app.core.scroll_event.call(null);
+
 wesele_app.events.check_user.call(null);
 
 return wesele_app.core.mount_root.call(null);
 });
 goog.exportSymbol('wesele_app.core.init', wesele_app.core.init);
 
-//# sourceMappingURL=core.js.map?rel=1511708183578
+//# sourceMappingURL=core.js.map?rel=1511878035921

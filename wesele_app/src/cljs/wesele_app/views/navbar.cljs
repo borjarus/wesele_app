@@ -34,7 +34,7 @@
        :church-page "b"
        :wedding-hall-page "c"
        :gallery-page "e"
-       :else "a")]))
+       "a")]))
 
 (defn nav-item []
   (let [active-link (re-frame/subscribe [:active-panel])]

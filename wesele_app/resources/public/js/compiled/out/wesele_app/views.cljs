@@ -7,6 +7,7 @@
             [wesele-app.views.gallery :refer [gallery-page]]
             [wesele-app.views.login :refer [login-page]]
             [wesele-app.views.rsvp :refer [rsvp-page]] 
+            [wesele-app.views.gifts :refer [gifts-page]] 
             ))
 
 ;; main
@@ -18,6 +19,7 @@
 (defmethod panels :church-page [] [church-page])
 (defmethod panels :wedding-hall-page [] [wedding-hall-page])
 (defmethod panels :gallery-page [] [gallery-page])
+(defmethod panels :gifts-page [] [gifts-page])
 (defmethod panels :default [] [:div])
 
 (defn show-panel
