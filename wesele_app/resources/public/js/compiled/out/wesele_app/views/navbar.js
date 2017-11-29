@@ -11,20 +11,20 @@ return null;
 }
 });
 wesele_app.views.navbar.inic_2_letters = (function wesele_app$views$navbar$inic_2_letters(n){
-var col = cljs.core.map.call(null,(function (p1__8795_SHARP_){
-return clojure.string.split.call(null,p1__8795_SHARP_,/\s+/);
-}),cljs.core.map.call(null,(function (p1__8796_SHARP_){
-return clojure.string.trim.call(null,p1__8796_SHARP_);
+var col = cljs.core.map.call(null,(function (p1__15654_SHARP_){
+return clojure.string.split.call(null,p1__15654_SHARP_,/\s+/);
+}),cljs.core.map.call(null,(function (p1__15655_SHARP_){
+return clojure.string.trim.call(null,p1__15655_SHARP_);
 }),clojure.string.split.call(null,n,/\|/)));
 return cljs.core.map.call(null,((function (col){
-return (function (p1__8797_SHARP_){
-return cljs.core.apply.call(null,cljs.core.str,p1__8797_SHARP_);
+return (function (p1__15656_SHARP_){
+return cljs.core.apply.call(null,cljs.core.str,p1__15656_SHARP_);
 });})(col))
 ,cljs.core.map.call(null,cljs.core.flatten,cljs.core.map.call(null,((function (col){
 return (function (c){
 return cljs.core.map.call(null,((function (col){
-return (function (p1__8798_SHARP_){
-return cljs.core.take.call(null,(2),p1__8798_SHARP_);
+return (function (p1__15657_SHARP_){
+return cljs.core.take.call(null,(2),p1__15657_SHARP_);
 });})(col))
 ,c);
 });})(col))
@@ -42,21 +42,21 @@ return and2;
 });
 wesele_app.views.navbar.get_menu_icon = (function wesele_app$views$navbar$get_menu_icon(){
 var active_link = re_frame.core.subscribe.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"active-panel","active-panel",-1802545994)], null));
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span.menu-icon","span.menu-icon",-986462898),(function (){var pred__8802 = cljs.core._EQ_;
-var expr__8803 = cljs.core.deref.call(null,active_link);
-if(cljs.core.truth_(pred__8802.call(null,new cljs.core.Keyword(null,"home-page","home-page",1804156194),expr__8803))){
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span.menu-icon","span.menu-icon",-986462898),(function (){var pred__15661 = cljs.core._EQ_;
+var expr__15662 = cljs.core.deref.call(null,active_link);
+if(cljs.core.truth_(pred__15661.call(null,new cljs.core.Keyword(null,"home-page","home-page",1804156194),expr__15662))){
 return "a";
 } else {
-if(cljs.core.truth_(pred__8802.call(null,new cljs.core.Keyword(null,"rsvp-page","rsvp-page",2134532812),expr__8803))){
+if(cljs.core.truth_(pred__15661.call(null,new cljs.core.Keyword(null,"rsvp-page","rsvp-page",2134532812),expr__15662))){
 return "d";
 } else {
-if(cljs.core.truth_(pred__8802.call(null,new cljs.core.Keyword(null,"church-page","church-page",1788377738),expr__8803))){
+if(cljs.core.truth_(pred__15661.call(null,new cljs.core.Keyword(null,"church-page","church-page",1788377738),expr__15662))){
 return "b";
 } else {
-if(cljs.core.truth_(pred__8802.call(null,new cljs.core.Keyword(null,"wedding-hall-page","wedding-hall-page",1494295634),expr__8803))){
+if(cljs.core.truth_(pred__15661.call(null,new cljs.core.Keyword(null,"wedding-hall-page","wedding-hall-page",1494295634),expr__15662))){
 return "c";
 } else {
-if(cljs.core.truth_(pred__8802.call(null,new cljs.core.Keyword(null,"gallery-page","gallery-page",-1458032316),expr__8803))){
+if(cljs.core.truth_(pred__15661.call(null,new cljs.core.Keyword(null,"gallery-page","gallery-page",-1458032316),expr__15662))){
 return "e";
 } else {
 return "a";
@@ -81,7 +81,7 @@ var menu = re_frame.core.subscribe.call(null,new cljs.core.PersistentVector(null
 var user = re_frame.core.subscribe.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"get-user","get-user",-990309598)], null));
 return ((function (menu,user){
 return (function (){
-return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.header-top","div.header-top",-460304949),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.row","div.row",133678515),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.col-md-8.offset-md-2.header-top-container","div.col-md-8.offset-md-2.header-top-container",-332898139),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.row","div.row",133678515),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.col-5","div.col-5",-2108746862),"Ania"], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.col-2","div.col-2",-1787809207),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"img.bird","img.bird",222875218),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"src","src",-1651076051),"img/bird.png",new cljs.core.Keyword(null,"alt","alt",-3214426),""], null)], null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.col-5","div.col-5",-2108746862),"Mirek"], null)], null)], null)], null)], null),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"nav.navbar.main-navbar.navbar-toggleable-sm","nav.navbar.main-navbar.navbar-toggleable-sm",-1231276069),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"button.navbar-toggler","button.navbar-toggler",-295102866),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null,"type","type",1174270348),"button",new cljs.core.Keyword(null,"data-toggle","data-toggle",436966687),"collapse",new cljs.core.Keyword(null,"data-target","data-target",-113904678),"#exCollapsingNavbar2",new cljs.core.Keyword(null,"aria-controls","aria-controls",-1872379154),"exCollapsingNavbar2",new cljs.core.Keyword(null,"aria-expanded","aria-expanded",-1360942393),"false",new cljs.core.Keyword(null,"aria-label","aria-label",455891514),"Toggle navigation"], null),"\u2630"], null),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.collapse.navbar-collapse","div.collapse.navbar-collapse",-2098143156),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"id","id",-1388402092),"exCollapsingNavbar2"], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"a.navbar-brand","a.navbar-brand",691442118),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"href","href",-793805698),"#/"], null),wesele_app.views.navbar.get_menu_icon.call(null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"ul.nav.navbar-nav","ul.nav.navbar-nav",1805559761),cljs.core.map.call(null,((function (menu,user){
+return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.header-top","div.header-top",-460304949),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.row","div.row",133678515),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.col-md-8.offset-md-2.header-top-container","div.col-md-8.offset-md-2.header-top-container",-332898139),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.row","div.row",133678515),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.col-5","div.col-5",-2108746862),"Ania"], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.col-2","div.col-2",-1787809207),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"img.bird","img.bird",222875218),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"src","src",-1651076051),"img/bird.png",new cljs.core.Keyword(null,"alt","alt",-3214426),""], null)], null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.col-5","div.col-5",-2108746862),"Mirek"], null)], null)], null)], null)], null),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"nav.navbar.navbar-expand-md.navbar-light.main-navbar","nav.navbar.navbar-expand-md.navbar-light.main-navbar",641037753),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"button.navbar-toggler","button.navbar-toggler",-295102866),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null,"type","type",1174270348),"button",new cljs.core.Keyword(null,"data-toggle","data-toggle",436966687),"collapse",new cljs.core.Keyword(null,"data-target","data-target",-113904678),"#exCollapsingNavbar2",new cljs.core.Keyword(null,"aria-controls","aria-controls",-1872379154),"exCollapsingNavbar2",new cljs.core.Keyword(null,"aria-expanded","aria-expanded",-1360942393),"false",new cljs.core.Keyword(null,"aria-label","aria-label",455891514),"Toggle navigation"], null),"\u2630"], null),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.collapse.navbar-collapse","div.collapse.navbar-collapse",-2098143156),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"id","id",-1388402092),"exCollapsingNavbar2"], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"a.navbar-brand","a.navbar-brand",691442118),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"href","href",-793805698),"#/"], null),wesele_app.views.navbar.get_menu_icon.call(null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"ul.nav.navbar-nav","ul.nav.navbar-nav",1805559761),cljs.core.map.call(null,((function (menu,user){
 return (function (x){
 if(cljs.core._EQ_.call(null,new cljs.core.Keyword(null,"on-off","on-off",420433376).cljs$core$IFn$_invoke$arity$1(x),(1))){
 return cljs.core.with_meta(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [wesele_app.views.navbar.nav_item,x], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.Keyword(null,"id","id",-1388402092).cljs$core$IFn$_invoke$arity$1(x)], null));
@@ -90,8 +90,8 @@ return null;
 }
 });})(menu,user))
 ,cljs.core.deref.call(null,menu))], null)], null),(((cljs.core.deref.call(null,user) == null))?new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.search-panel","div.search-panel",1701190536),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"i.fa.fa-lock","i.fa.fa-lock",-861743067),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"aria-hidden","aria-hidden",399337029),"true"], null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"input.form-control","input.form-control",-1123419636),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"type","type",1174270348),"text",new cljs.core.Keyword(null,"placeholder","placeholder",-104873083),"Login",new cljs.core.Keyword(null,"name","name",1843675177),"username",new cljs.core.Keyword(null,"id","id",-1388402092),"username",new cljs.core.Keyword(null,"on-key-press","on-key-press",-399563677),((function (menu,user){
-return (function (p1__8805_SHARP_){
-return wesele_app.views.navbar.handle_login.call(null,p1__8805_SHARP_,p1__8805_SHARP_.target.value,document.getElementById("password").value);
+return (function (p1__15664_SHARP_){
+return wesele_app.views.navbar.handle_login.call(null,p1__15664_SHARP_,p1__15664_SHARP_.target.value,document.getElementById("password").value);
 });})(menu,user))
 ], null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"input","input",556931961),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),"hidden",new cljs.core.Keyword(null,"value","value",305978217),"An1@&m1ReK",new cljs.core.Keyword(null,"name","name",1843675177),"password",new cljs.core.Keyword(null,"id","id",-1388402092),"password"], null)], null)], null):(function (){var nazwa = cljs.core.get.call(null,new cljs.core.Keyword(null,"details","details",1956795411).cljs$core$IFn$_invoke$arity$1(cljs.core.deref.call(null,user)),new cljs.core.Keyword(null,"nazwa","nazwa",-1360021634));
 return new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.search-panel","div.search-panel",1701190536),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"title","title",636505583),wesele_app.views.navbar.users_name.call(null,nazwa,(2))], null),wesele_app.views.navbar.users_name.call(null,nazwa,(1))," ",new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"i.fa.fa-user","i.fa.fa-user",382004105),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"aria-hidden","aria-hidden",399337029),"true",new cljs.core.Keyword(null,"title","title",636505583),wesele_app.views.navbar.users_name.call(null,nazwa,(2))], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"a","a",-2123407586),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"href","href",-793805698),"",new cljs.core.Keyword(null,"on-click","on-click",1632826543),((function (nazwa,menu,user){
@@ -106,4 +106,4 @@ return re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 2, 
 ;})(menu,user))
 });
 
-//# sourceMappingURL=navbar.js.map?rel=1511877913902
+//# sourceMappingURL=navbar.js.map?rel=1511978951244

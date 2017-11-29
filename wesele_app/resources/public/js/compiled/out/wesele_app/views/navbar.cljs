@@ -58,7 +58,7 @@
            [:div.col-5 "Mirek"]
            ]]]
         ]
-       [:nav.navbar.main-navbar.navbar-toggleable-sm
+       [:nav.navbar.navbar-expand-md.navbar-light.main-navbar
         [:button.navbar-toggler {:type "button" :data-toggle "collapse" :data-target "#exCollapsingNavbar2" :aria-controls "exCollapsingNavbar2" :aria-expanded "false" :aria-label "Toggle navigation"} \u2630]
         [:div.collapse.navbar-collapse  {:id "exCollapsingNavbar2"}
          [:a.navbar-brand {:href "#/"}

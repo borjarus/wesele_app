@@ -17,6 +17,7 @@
                  [ring/ring-defaults "0.2.1"]
                  [ring/ring-json "0.4.0"]
                  [org.webjars.bower/fastclick "0.6.11"]
+                 [org.webjars.npm/popper.js "1.12.5"]
                  [org.webjars/jquery "3.1.1"]
                  [org.webjars.bower/tether "1.3.7"]
                  [org.webjars/bootstrap "4.0.0-beta.2"]

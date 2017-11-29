@@ -77,6 +77,7 @@
                 "/assets/font-awesome/css/font-awesome.min.css"
                 "css/themes/light/nanogallery_light.min.css"
                 "css/nanogallery.min.css"
+                "css/wedding-icons.min.css"
                 "css/additional.css"
                 "css/main.css"
                 )]
@@ -86,6 +87,7 @@
                 "js/jquery.nanogallery.min.js"
                 "js/jquery.easypiechart.min.js"
                 "/assets/tether/dist/js/tether.min.js"
+                "/assets/popper.js/dist/umd/popper.min.js"
                 "/assets/switchery/dist/switchery.min.js"
                 "/assets/bootstrap/js/bootstrap.min.js"
                 "/assets/leaflet/dist/leaflet.js"

@@ -74,7 +74,29 @@
      [:div.container
       [:div.row
        [:div.col-md-12
-        [:h1 "HOME PAGE"]]]
+        [:p.pt-4 ""]]]
+      [:div.row
+       [:div.col-md-3
+        [:div.row.justify-content-center [:i.icon.icon-kalendarz_02 {:style {:font-size "3rem"}}]]
+        
+        [:div.row.justify-content-center.font-weight-bold "Data"]
+        [:div.row.justify-content-center "18 Sierpnia 2018"]
+        ]
+       [:div.col-md-3
+        [:div.row.justify-content-center [:i.icon.icon-cat-256 {:style {:font-size "3rem"}}]]
+        [:div.row.justify-content-center.font-weight-bold "Godzina"]
+        [:div.row.justify-content-center "17:00"]]
+       [:div.col-md-3
+        [:div.row.justify-content-center [:i.icon.icon-cat-290 {:style {:font-size "3rem"}}]]
+        [:div.row.justify-content-center.font-weight-bold "Miejsce ślubu"]
+        [:div.row.justify-content-center.text-center "Kościół Rzymskokatolicki św. Jana Chrzciciela"]]
+       [:div.col-md-3
+        [:div.row.justify-content-center [:i.icon.icon-cat-301 {:style {:font-size "3rem"}}]]
+        [:div.row.justify-content-center.font-weight-bold "Wesele"]
+        [:div.row.justify-content-center "Lila Park"]]]
+      [:div.row
+       [:div.col-md-12
+        [:p.pt-4 ""]]]
       [:div.row
        [:div.col-md-12.section-wrapper
         [countdown-component :d]
