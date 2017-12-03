@@ -71,7 +71,7 @@
   (fn []
     [:div
      [nav-bar]
-     [:div.container
+     [:div.container.container_bg
       [:div.row
        [:div.col-md-12
         [:p.pt-4 ""]]]
@@ -104,4 +104,8 @@
         [countdown-component :m]
         [countdown-component :s]
         ]
-      ]]])))
+       ]
+      [:div.row
+       [:div.col-md-12
+        [:p.pt-4 ""]]]
+      ]])))
