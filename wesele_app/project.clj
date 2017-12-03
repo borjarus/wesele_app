@@ -89,6 +89,14 @@
                     :preloads             [devtools.preload]
                     :external-config      {:devtools/config {:features-to-install :all}}
                     }}
+    {:id           "prod"
+     :source-paths ["src/cljs"]
+     :compiler     {:main                 wesele-app.core
+                    :output-to            "resources/public/js/compiled/app.js"
+                    :asset-path           "js/compiled/out"
+                    :source-map-timestamp true
+                    :optimizations :simple
+                    }}
     ]}
 
   :main wesele-app.server
