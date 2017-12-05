@@ -14,3 +14,5 @@ resources/public/js/compiled/
 wesele_app/Docker/
 wesele_app/Visible
 *.gz
+
+wesele_app/config/
