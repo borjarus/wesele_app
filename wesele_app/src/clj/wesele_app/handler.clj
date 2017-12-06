@@ -23,6 +23,7 @@
             [clojure.tools.logging :as log]
             monger.json
             [wesele-app.galery-api :refer [get-all-images gallery-pagination filter-by-tag]]
+            [monger.credentials :as mcred] 
             )
   (:import [org.bson.types ObjectId]
            [com.mongodb DB WriteConcern])
@@ -45,12 +46,16 @@
   )
 
 
+
 (defonce db-conn
   (try
     (let [host "mongo"
-          port "27017"]
+          port "27017"
+          db "wesele-app"
+          user "wesele-mila"
+          password (slurp "config/wesele-mongo")]
       ;;(println (str host " -- " port))
-      (mg/connect {:host host :port (Integer/parseInt port)}))
+      (mg/connect-with-credentials host (Integer/parseInt port) (mcred/create user db password)))
     (catch Exception e (println (str "[DB-ERROR] " (.getMessage e))))))
 
 ;;db-conn
