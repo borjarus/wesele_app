@@ -29,22 +29,8 @@
            [com.mongodb DB WriteConcern])
   )
 
+;; IMPORTANT TO USE LOGIN FUNCTION
 (def secret "mysupersecret")
-
-(comment 
-(defonce db-conn
-  (try
-    (let [host (if (nil? (System/getenv "WESELE_MONGO_PORT_27017_TCP_ADDR"))
-                 "127.0.0.1"
-                 (System/getenv "WESELE_MONGO_PORT_27017_TCP_ADDR"))
-          port (if (nil? (System/getenv "WESELE_MONGO_PORT_27017_TCP_PORT"))
-                 "27017"
-                 (System/getenv "WESELE_MONGO_PORT_27017_TCP_PORT"))]
-      (println (str host " -- " port))
-      (mg/connect {:host host :port (Integer/parseInt port)}))
-    (catch Exception e (println (str "[DB-ERROR] " (.getMessage e))))))
-  )
-
 
 
 (defonce db-conn
@@ -53,7 +39,7 @@
           port "27017"
           db "wesele-app"
           user "wesele-mila"
-          password (slurp "config/wesele-mongo")]
+          password (clojure.string/trim-newline (slurp "config/wesele-mongo"))]
       ;;(println (str host " -- " port))
       (mg/connect-with-credentials host (Integer/parseInt port) (mcred/create user db password)))
     (catch Exception e (println (str "[DB-ERROR] " (.getMessage e))))))
