@@ -10,7 +10,8 @@
 (def color-primary-0 "#DFDBE5")
 (def color-primary-1 "#AA71A7")
 (def color-primary-2 "#8D478A")
-(def color-primary-3 "#71266E")
+;(def color-primary-3 "#71266E")
+  (def color-primary-3 "#AA9BC6")
 (def color-primary-4 "#550E52")
 (def color-primary-5 "#390036")
   (def color-dropshadow-1 "#8775aa")
@@ -52,6 +53,7 @@
                                 "-webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(245,245,245,1) 51%,rgba(236,236,236,1) 100%)"
                                 "linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(245,245,245,1) 51%,rgba(236,236,236,1) 100%)"}
                   :filter "progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ececec',GradientType=0 )"}]
+
 
 ;; navbar style
 [:.main-navbar
@@ -112,10 +114,11 @@
                        }}]
 
 ;;  header styles
+  (def heder-grad-main-color "rgba(170, 155, 198,.9)")
  [:.header-top
   {:background #{"-moz-linear-gradient(top,  rgba(255,255,255,.9) 0%, rgba(255,255,255,.7) 70%, rgba(255,255,255,.25) 100%)"
                  "-webkit-linear-gradient(top,  rgba(255,255,255,.9) 0%,rgba(255,255,255,.7) 70%,rgba(255,255,255,.25) 100%)"
-                 "linear-gradient(to top,  rgba(214, 171, 212,.9) 0%,rgba(255,255,255,.7) 70%,rgba(255,255,255,.25) 100%)"}
+                 (str "linear-gradient(to top, " heder-grad-main-color " 0%,rgba(255,255,255,.7) 70%,rgba(255,255,255,.25) 100%)")}
    :height "195px"}
    [:.header-top-container
     {:font-family "'Courgette regular'"
@@ -171,6 +174,9 @@
  [:.search-panel
   {:display "inline-block"
    :width "170px"}
+  [:a:visited {:color "rgba(0,0,0,.5)"}
+   [:i, :i:before {:color "rgba(0,0,0,.5)"}]]
+  [:a:hover {:color "#000"}]
   [:i
    {:display "inline-block"
     :margin "0 5px"}]

@@ -33,7 +33,7 @@ h1 {
 }
 
 .main-navbar {
-  background-color: #71266E;
+  background-color: #AA9BC6;
   font-family: 'Courgette regular';
   font-size: 20px;
 }
@@ -110,8 +110,8 @@ input[type="password"] {
 
 .header-top {
   background: -webkit-linear-gradient(top,  rgba(255,255,255,.9) 0%,rgba(255,255,255,.7) 70%,rgba(255,255,255,.25) 100%);
-  background: linear-gradient(to top,  rgba(214, 171, 212,.9) 0%,rgba(255,255,255,.7) 70%,rgba(255,255,255,.25) 100%);
   background: -moz-linear-gradient(top,  rgba(255,255,255,.9) 0%, rgba(255,255,255,.7) 70%, rgba(255,255,255,.25) 100%);
+  background: linear-gradient(to top, rgba(170, 155, 198,.9) 0%,rgba(255,255,255,.7) 70%,rgba(255,255,255,.25) 100%);
   height: 195px;
 }
 
@@ -149,12 +149,12 @@ input[type="password"] {
 .clock svg path {
   stroke-width: 12px;
   fill: #fff;
-  stroke: #71266E;
+  stroke: #AA9BC6;
 }
 
 .clock svg path.time-out {
   fill: none;
-  stroke: #71266E;
+  stroke: #AA9BC6;
 }
 
 .content {
@@ -180,6 +180,18 @@ input[type="password"] {
 .search-panel {
   display: inline-block;
   width: 170px;
+}
+
+.search-panel a:visited {
+  color: rgba(0,0,0,.5);
+}
+
+.search-panel a:visited i, .search-panel a:visited i:before {
+  color: rgba(0,0,0,.5);
+}
+
+.search-panel a:hover {
+  color: #000;
 }
 
 .search-panel i {
