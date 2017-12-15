@@ -27,7 +27,7 @@
      [:div.avatar
       [:img {:src "img/logotyp.png" :alt ""}]]
      [:div.inputs
-      [:input {:name "username" :id "username" :type "text" :placeholder "Login"
+      [:input {:name "username" :id "username" :type "text" :placeholder "Hasło"
                :on-key-press #(handle-login % (-> (.getElementById js/document "username") .-value)
                                             (-> (.getElementById js/document "password") .-value)
                                             nil)}]

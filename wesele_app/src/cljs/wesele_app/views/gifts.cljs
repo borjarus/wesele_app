@@ -12,7 +12,8 @@
       (fn []
         [:div
          [nav-bar]
-         [:div.container.container_bg
+          [:div.container-fluid.container_bg
+           [:div.container
           [:div.row
            [:div.col-md-12
             [:p.pt-4 ""]]]
@@ -67,7 +68,7 @@
            [:li.book
             [:a {:href "http://www.taniaksiazka.pl"} "www.taniaksiazka.pl"]]
            ]
-          [:p.pb-2]]])}))
+          [:p.pb-2]]]])}))
 
 
 

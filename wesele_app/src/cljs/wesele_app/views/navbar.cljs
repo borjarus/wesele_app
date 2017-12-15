@@ -34,6 +34,7 @@
        :church-page "b"
        :wedding-hall-page "c"
        :gallery-page "e"
+       :gifts-page "f"
        "a")]))
 
 (defn nav-item []

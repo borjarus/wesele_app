@@ -31,7 +31,8 @@
     (fn []
       [:div
        [nav-bar]
-       [:div.container.container_bg
+       [:div.container-fluid.container_bg
+        [:div.container
         [:div.row
          [:div.col-md-12
           [:p.pt-4 ""]]]
@@ -43,5 +44,5 @@
         [:div.row
          [:p ""]]
         [:div.row
-         [:div.col-md-8.offset-md-2 [map-view]]]]]
+         [:div.col-md-8.offset-md-2 [map-view]]]]]]
       )}))

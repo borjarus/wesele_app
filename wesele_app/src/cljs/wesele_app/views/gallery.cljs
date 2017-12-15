@@ -35,7 +35,8 @@
       (fn []
         [:div
          [nav-bar]
-         [:div.container.container_bg
+          [:div.container-fluid.container_bg
+           [:div.container
           [:div.row
            [:div.col-md-12
             [:p.pt-4 ""]]]
@@ -48,7 +49,7 @@
           [:div.row
            [:div.col-md-12
             [:div#wedding-gallery]
-            ]]]])})))
+            ]]]]])})))
 
 
 

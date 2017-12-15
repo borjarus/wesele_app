@@ -255,7 +255,7 @@
    {:width "360px"
     :height "45px"
     :background "#1b1b1bcc"
-    :color "#4d4d4d"
+    :color "#ffffff"
     :font-size "16px"
     :margin-top "15px"
     :-webkit-border-radius "5px"
