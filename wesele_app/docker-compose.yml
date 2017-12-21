@@ -12,7 +12,7 @@ services:
     command: 'lein run'
     environment:
       TZ: 'Europe/Warsaw'
-      CLOJURE_ENV: 'development'
+      CLOJURE_ENV: 'production'
   mongo:
     image: mvertes/alpine-mongo
     command: 'mongod --auth'

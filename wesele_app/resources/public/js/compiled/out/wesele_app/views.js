@@ -59,4 +59,4 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
 ;})(active_panel))
 });
 
-//# sourceMappingURL=views.js.map?rel=1513115777374
+//# sourceMappingURL=views.js.map?rel=1513371125077

@@ -30,7 +30,7 @@
 (defn ^:export init []
   (routes/app-routes)
   (re-frame/dispatch-sync [:initialize-db])
-  (dev-setup)
+  ;;(dev-setup)
   (scroll-event)
   (wesele-app.events/check-user)
   (mount-root))

@@ -43,8 +43,6 @@ wesele_app.routes.app_routes.call(null);
 
 re_frame.core.dispatch_sync.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"initialize-db","initialize-db",230998432)], null));
 
-wesele_app.core.dev_setup.call(null);
-
 wesele_app.core.scroll_event.call(null);
 
 wesele_app.events.check_user.call(null);
@@ -53,4 +51,4 @@ return wesele_app.core.mount_root.call(null);
 });
 goog.exportSymbol('wesele_app.core.init', wesele_app.core.init);
 
-//# sourceMappingURL=core.js.map?rel=1513115779220
+//# sourceMappingURL=core.js.map?rel=1513865428032
