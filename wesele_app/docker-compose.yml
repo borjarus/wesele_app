@@ -1,5 +1,13 @@
 version: '3.4'
 services:
+  nginx-proxy:
+    image: mila/reverseproxy 
+    ports:
+      - "80:80"
+    depends_on: 
+      - web
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
   web:
     image: mila/wesele-app
     volumes:

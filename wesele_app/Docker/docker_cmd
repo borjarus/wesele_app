@@ -1,0 +1,41 @@
+docker build -t mila/clojure .
+
+docker exec -it wesele_app /bin/bash
+
+docker run --rm -it \
+--name wesele_app \
+--link wesele-mongo \
+-p 10535:10535 \
+-p 7888:7888 \
+-w /w -v "$PWD":/w \
+mila/clojure \
+/bin/bash
+
+docker run --rm -it \
+--name wesele_app \
+--link wesele-mongo \
+-p 10535:10535 \
+-p 3449:3449 \
+-p 7888:7888 \
+-w /w -v "$PWD":/w \
+mila/clojure \
+/bin/bash
+
+
+docker run --rm -it \
+--name wesele_app \
+--link wesele-mongo \
+-p 10535:10535 \
+-p 7888:7888 \
+-e TZ=Europe/Warsaw \
+-w /w -v "$PWD":/w \
+mila/clojure \
+/bin/bash
+
+======= DOCKER ===============
+
+docker build -t mila/mongo .
+
+docker run --name wesele-mongo -p 27017:27017 -v /home/mila/mongo/db:/data/db -d mila/mongo
+docker start wesele-mongo
+
