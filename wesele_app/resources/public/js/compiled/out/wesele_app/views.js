@@ -12,12 +12,12 @@ goog.require('wesele_app.views.rsvp');
 goog.require('wesele_app.views.gifts');
 if(typeof wesele_app.views.panels !== 'undefined'){
 } else {
-wesele_app.views.panels = (function (){var method_table__7698__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
-var prefer_table__7699__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
-var method_cache__7700__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
-var cached_hierarchy__7701__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
-var hierarchy__7702__auto__ = cljs.core.get.call(null,cljs.core.PersistentArrayMap.EMPTY,new cljs.core.Keyword(null,"hierarchy","hierarchy",-1053470341),cljs.core.get_global_hierarchy.call(null));
-return (new cljs.core.MultiFn(cljs.core.symbol.call(null,"wesele-app.views","panels"),cljs.core.identity,new cljs.core.Keyword(null,"default","default",-1987822328),hierarchy__7702__auto__,method_table__7698__auto__,prefer_table__7699__auto__,method_cache__7700__auto__,cached_hierarchy__7701__auto__));
+wesele_app.views.panels = (function (){var method_table__40415__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
+var prefer_table__40416__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
+var method_cache__40417__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
+var cached_hierarchy__40418__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
+var hierarchy__40419__auto__ = cljs.core.get.call(null,cljs.core.PersistentArrayMap.EMPTY,new cljs.core.Keyword(null,"hierarchy","hierarchy",-1053470341),cljs.core.get_global_hierarchy.call(null));
+return (new cljs.core.MultiFn(cljs.core.symbol.call(null,"wesele-app.views","panels"),cljs.core.identity,new cljs.core.Keyword(null,"default","default",-1987822328),hierarchy__40419__auto__,method_table__40415__auto__,prefer_table__40416__auto__,method_cache__40417__auto__,cached_hierarchy__40418__auto__));
 })();
 }
 cljs.core._add_method.call(null,wesele_app.views.panels,new cljs.core.Keyword(null,"login-page","login-page",2028706789),(function (){
@@ -59,4 +59,4 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
 ;})(active_panel))
 });
 
-//# sourceMappingURL=views.js.map?rel=1513371125077
+//# sourceMappingURL=views.js.map?rel=1515680982286
