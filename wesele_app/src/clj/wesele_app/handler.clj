@@ -71,7 +71,15 @@
                 "css/wedding-icons.min.css"
                 "css/additional.css"
                 "css/main.css"
-                )]
+                )
+    ;; GOOGLE ANALITICS
+    [:script {:async true :src "https://www.googletagmanager.com/gtag/js?id=UA-112312361-1"}]
+    [:script
+     "window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+                   gtag('js', new Date());
+
+                   gtag('config', 'UA-112312361-1');"]]
    [:body.diagonal-line-bg
     [:div {:id "app"} ""]
     (include-js "/assets/jquery/jquery.min.js"
