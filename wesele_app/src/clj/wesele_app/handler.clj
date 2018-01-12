@@ -62,6 +62,7 @@
   (html5
    [:head
     [:title "Wesele APP"]
+    [:meta {:name "viewport" :content "width=device-width, initial-scale=1, shrink-to-fit=no"}]
     (include-css "/assets/bootstrap/css/bootstrap.min.css"
                 "/assets/leaflet/dist/leaflet.css"
                 "/assets/switchery/dist/switchery.min.css"
