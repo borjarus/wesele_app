@@ -22,7 +22,8 @@ services:
       TZ: 'Europe/Warsaw'
       CLOJURE_ENV: 'production'
   mongo:
-    image: mvertes/alpine-mongo
+    #image: mvertes/alpine-mongo
+    image:  mila/mongo
     command: 'mongod --auth'
     ports:
       - 27017:27017

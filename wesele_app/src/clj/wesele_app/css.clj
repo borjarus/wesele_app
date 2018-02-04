@@ -254,7 +254,7 @@
   [(s/input (s/attr= :type :text))
    {:width "360px"
     :height "45px"
-    :background "#1b1b1bcc"
+    :background "#1b1b1b"
     :color "#ffffff"
     :font-size "16px"
     :margin-top "15px"

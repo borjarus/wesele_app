@@ -22,7 +22,7 @@
 (re-frame/reg-event-db
  :set-wedding-counter
  (fn [db _]
-   (let [now (in-seconds (interval (date-time (now)) (date-time 2018 8 18 16 0)))]
+   (let [now (in-seconds (interval (date-time (now)) (date-time 2018 8 18 17 0)))]
      (assoc db :wedding-counter (wedding-countdown now)))))
 
 
