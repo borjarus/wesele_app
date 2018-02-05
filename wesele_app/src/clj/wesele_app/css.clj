@@ -315,6 +315,15 @@
    [:&.book:before {:content "'\\f02d'"}]
    ]
 
+  ;; SPECIAL 1
+  [:#special1_div
+   {:height "500px"
+    :overflow "auto"}]
+  [:div#special1
+   {:font-size "22px"}
+   [:#heart_icon
+    {:font-size "142px"
+     :color "rebeccapurple"}]]
 
   )
 

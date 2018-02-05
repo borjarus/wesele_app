@@ -364,3 +364,17 @@ ul.gifts-special > li.beer:before {
 ul.gifts-special > li.book:before {
   content: '\f02d';
 }
+
+#special1_div {
+  height: 500px;
+  overflow: auto;
+}
+
+div#special1 {
+  font-size: 22px;
+}
+
+div#special1 #heart_icon {
+  font-size: 142px;
+  color: rebeccapurple;
+}

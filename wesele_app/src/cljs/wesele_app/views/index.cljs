@@ -67,7 +67,12 @@
 ;; ===========
 
 (defn index-page []
-  (let [wedding-counter (re-frame/subscribe [:wedding-counter])]
+  (let [wedding-counter (re-frame/subscribe [:wedding-counter])
+        user (re-frame/subscribe [:get-user])
+        special1 (-> @user
+                     :details
+                     :special1)]
+    (console.log special1)
   (fn []
     [:div
      [nav-bar]
@@ -76,6 +81,45 @@
       [:div.row
        [:div.col-md-12
         [:p.pt-4 ""]]]
+      ;; wstawka z zaproszeniem dla martyny - PROJECT MARTINA
+      (if (= special1 1)
+        [:div#special1.row
+         [:div.col-md-12
+          [:h2.pt-4.text-center.font-italic "Droga Martyno!"]
+          [:p.pt-4 "Jak wiesz, zostałam chwilowo bez świadkowej. Zostałam postawiona w trudnym położeniu z ciężką decyzją. Łatwiej było wybierać wspólnie menu:"]
+          [:p.pt-4
+           [:img.special1-img.rounded-circle.mx-auto.d-block {:src "img/special1/001.jpg"}]]
+          [:p.pt-4 "Molly może i by wiedziała co robić?!"]
+          [:p.pt-4
+           [:img.special1-img.rounded-circle.mx-auto.d-block {:src "img/special1/002.jpg"}]]
+          [:p.pt-4 "Więc siadłam rozważając wszelkie napływające argumenty! Doradzała mi niedoszła świadkowa i inne zaufane osoby. Rozważanie było tak poważne niczym czekanie na samolot:"]
+          [:p.pt-4
+           [:img.special1-img.rounded-circle.mx-auto.d-block {:src "img/special1/003.jpg"}]]
+          [:p.pt-4 "Argumenty mają silne podstawy!"]
+          [:ul.list-unstyled
+           [:li "1. Lubimy ploteczki i babskie sprawy! (no jak nie jak tak!):"]
+           [:li.special1-img.pt-4.pb-4
+            [:img.special1-img.rounded-circle.mx-auto.d-block {:src "img/special1/004.jpg"}]]
+           [:li "2. Jesteś od dawna częścią naszej arcy specyficznej rodziny :D :"]
+           [:li.special1-img.pt-4.pb-4
+            [:img.special1-img.rounded-circle.mx-auto.d-block {:src "img/special1/005.jpg"}]]
+           [:li "3. Jak już coś robimy to porządnie! (po co robić za mało jak można zrobić za dużo!) :"]
+           [:li.special1-img.pt-4.pb-4
+            [:img.special1-img.rounded-circle.mx-auto.d-block {:src "img/special1/006.jpg"}]]
+           [:li "4. Mamy podobne i prawidłowe gusty muzyczne, więc czeka nas niejeden fajny koncert!"]
+           [:li.special1-img.pt-4.pb-4
+            [:img.special1-img.rounded-circle.mx-auto.d-block {:src "img/special1/007.jpg"}]]
+           [:li "5. Jako jedna z niewielu szczerze i żywo interesujesz się naszymi przygotowaniami"]
+           [:p.pt-4 "Zatem ja i mój narzeczony mamy to jedno ważne pytanie:"]
+           [:li.special1-img.pt-4.pb-4
+            [:img.special1-img.rounded-circle.mx-auto.d-block {:src "img/special1/008.jpg"}]]
+           ]
+          [:p.pt-4.display-4.font-italic.text-center "Czy zechcesz zostać w tej wyjątkowej sytuacji"
+           [:br]
+           "i w tym wyjątkowym dniu moją świadkową?"]
+          [:p.pt-4.text-center
+           [:i#heart_icon.fa.fa-heart]]
+          ]])
       [:div.row
        [:div.col-md-3
         [:div.row.justify-content-center [:i.icon.icon-kalendarz_02 {:style {:font-size "3rem"}}]]
