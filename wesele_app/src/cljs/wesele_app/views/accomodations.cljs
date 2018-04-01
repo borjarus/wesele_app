@@ -49,6 +49,9 @@
                [:li
                 [:a {:href "http://www.hotele-tur.com.pl/0cpoe_informacje_o_hotelu_jatnar_w_szczecine.htm" :target "_blank"}
                  "Hotel Jantar - Szczecin " [:i.fa.fa-chevron-right.arrow_link.class]]]
+               [:li
+                [:a {:href "https://www.accorhotels.com/pl/hotel-3428-ibis-budget-szczecin/index.shtml" :target "_blank"}
+                 "Ibis Budget " [:i.fa.fa-chevron-right.arrow_link.class]]]
                ]
               [:p.h5.pb-2 "Blisko Kościoła (centrum Szczecina):"]
               [:ul
@@ -59,14 +62,14 @@
                 [:a {:href "https://www.campanile.com/pl/hotels/campanile-szczecin" :target "_blank"}
                  "Campanile " [:i.fa.fa-chevron-right.arrow_link.class]]]
                [:li
+                [:a {:href "https://www.accorhotels.com/pl/hotel-3369-ibis-szczecin-centrum/index.shtml" :target "_blank"}
+                 "Hotel Ibis Szczecin Centrum " [:i.fa.fa-chevron-right.arrow_link.class]]]
+               [:li
                 [:a {:href "http://www.hotelewam.pl/633-hotel-rycerski-szczecin.html" :target "_blank"}
                  "Hotel Rycerski " [:i.fa.fa-chevron-right.arrow_link.class]]]
                [:li
                 [:a {:href "http://www.elkasen.szczecin.pl/" :target "_blank"}
                  "Hotelik Elka-Sen " [:i.fa.fa-chevron-right.arrow_link.class]]]
-               [:li
-                [:a {:href "https://www.accorhotels.com/pl/hotel-3428-ibis-budget-szczecin/index.shtml" :target "_blank"}
-                 "Ibis Budget " [:i.fa.fa-chevron-right.arrow_link.class]]]
                [:li
                 [:a {:href "http://www.hotelewam.pl/632-hotel-kapitan-szczecin.html" :target "_blank"}
                  "Hotel Kapitan " [:i.fa.fa-chevron-right.arrow_link.class]]]]

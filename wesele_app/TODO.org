@@ -1,3 +1,1 @@
-* Moze by tak uzyc Scrollspy ? https://getbootstrap.com/docs/4.0/components/scrollspy/
-* Poprawic wielkosc obrazkow 500x250 & 250x500 
-* przygotowane 2 wersje do przyklepniecia własciwa :)  
+* Potwierdzono przybycie / Oczekiwanie na potwierdzenie przybycia
