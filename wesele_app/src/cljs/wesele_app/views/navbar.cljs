@@ -35,6 +35,7 @@
        :wedding-hall-page "c"
        :gallery-page "e"
        :gifts-page "f"
+       :accomodations-page "g"
        "a")]))
 
 (defn nav-item []

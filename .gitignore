@@ -14,3 +14,4 @@ resources/public/js/compiled/
 wesele_app/Visible
 *.gz
 wesele_app/config/
+wesele_app/db/weseleapp-db*

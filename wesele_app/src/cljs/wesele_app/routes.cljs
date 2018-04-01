@@ -56,5 +56,9 @@
       (re-frame/dispatch [:set-active-panel :login-page])
       (re-frame/dispatch [:set-active-panel :gifts-page])))
 
+  (defroute "/accomodations" []
+    (if (false? (check-login-time))
+      (re-frame/dispatch [:set-active-panel :login-page])
+      (re-frame/dispatch [:set-active-panel :accomodations-page])))
   ;; --------------------
   (hook-browser-navigation!))

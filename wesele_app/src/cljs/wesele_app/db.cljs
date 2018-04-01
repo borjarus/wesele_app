@@ -7,7 +7,9 @@
           {:title "Kościół" :href "#/church" :id "navbar-3" :sname "church-page" :on-off 1}
           {:title "Sala weselna" :href "#/wedding-hall" :id "navbar-4" :sname "wedding-hall-page" :on-off 1}
           {:title "Galeria" :href "#/galeria" :id "navbar-5" :sname "gallery-page" :on-off 1}
-          {:title "Skąd prezent zamiast kwiatów?" :href "#/gifts" :id "navbar-6" :sname "gifts-page" :on-off 1}]
+          {:title "Skąd prezent zamiast kwiatów?" :href "#/gifts" :id "navbar-6" :sname "gifts-page" :on-off 1}
+          {:title "Noclegi" :href "#/accomodations" :id "navbar-7" :sname "accomodations-page" :on-off 1}
+          ]
    :gallery {:thumbnailWidth "auto"
              :thumbnailHeight 200
              :colorScheme "none"
