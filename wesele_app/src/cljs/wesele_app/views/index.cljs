@@ -71,13 +71,26 @@
         user (re-frame/subscribe [:get-user])
         special1 (-> @user
                      :details
-                     :special1)]
-    (console.log special1)
+                     :special1)
+        invitation_confirmed (-> @user
+                     :details
+                     :invitation_confirmed)
+        ]
+    (console.log invitation_confirmed)
   (fn []
     [:div
      [nav-bar]
      [:div.container-fluid.container_bg
      [:div.container
+      [:div.row
+       [:div.col-md-12
+        [:p.pt-4 ""]]]
+      [:div.row
+       [:div.col-md-12.section-wrapper.d-flex.justify-content-center
+        (if (= 1 invitation_confirmed)
+          [:p.alert.alert-success.p-3 "Potwierdzono przybycie " [:i.fa.fa-check.fa-lg.pl-1]]
+          [:p.alert.alert-warning.p-3 "Oczekiwanie na potwierdzenie przybycia " [:i.fa.fa-times.fa-lg.pl-1]])
+        ]]
       [:div.row
        [:div.col-md-12
         [:p.pt-4 ""]]]
