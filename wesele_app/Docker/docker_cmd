@@ -39,3 +39,8 @@ docker build -t mila/mongo .
 docker run --name wesele-mongo -p 27017:27017 -v /home/mila/mongo/db:/data/db -d mila/mongo
 docker start wesele-mongo
 
+====== REVERSE PROXY ============
+
+
+docker build -t mila/reverseproxy .
+

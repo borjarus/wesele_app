@@ -76,7 +76,6 @@
                      :details
                      :invitation_confirmed)
         ]
-    (console.log invitation_confirmed)
   (fn []
     [:div
      [nav-bar]

@@ -1,1 +1,0 @@
-{"version":3,"file":"\/w\/resources\/public\/js\/compiled\/out\/wesele_app\/subs\/index.js","sources":["index.cljs?rel=1513114955518"],"lineCount":9,"mappings":";AAAA;;;AAGA,gCAAA,hCAACA,2GAEA,WAAKC,GAAGC;AAAR,AACE,OAAA,yGAAkBD","names":["re-frame.core\/reg-sub","db","_"]}

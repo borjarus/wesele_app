@@ -63,7 +63,8 @@
                      :compiler     {:output-to     "resources/public/css/main.css"
                                     :pretty-print? true}}]}
 
-  :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
+  :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]
+                 :timeout 120000}
 
   :profiles
   {:dev
