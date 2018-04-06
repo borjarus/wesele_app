@@ -31,6 +31,7 @@
      (condp = @active-link
        :home-page "a"
        :rsvp-page "d"
+       :news-page "d"
        :church-page "b"
        :wedding-hall-page "c"
        :gallery-page "e"
@@ -56,7 +57,9 @@
           [:div.row
            [:div.col-5 "Ania"]
            [:div.col-2
-            [:img.bird {:src "img/bird.png" :alt ""}]]
+            [:img.bird {:src "img/bird.png" :alt ""}]
+            ;[:img.bird {:src "img/logotyp.png" :alt "" :style {:width "120px"}}]
+            ]
            [:div.col-5 "Mirek"]
            ]]]
         ]
