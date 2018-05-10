@@ -28,4 +28,5 @@
              :items nil}
    :wedding-counter []
    :user nil
-   :pre-gallery 1})
+   :pre-gallery 1
+   :dropbox-api-key "JPL-j9Iw1DAAAAAAAAAACPjLZDgxjrZp5-kHQjPL7I2m67_wOSYAZ-06vDXPSmhZ"})

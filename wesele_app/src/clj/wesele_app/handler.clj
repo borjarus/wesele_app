@@ -5,6 +5,7 @@
             [ring.middleware.reload :refer [wrap-reload]]
             [ring.middleware.webjars :refer [wrap-webjars]]
             [ring.middleware.json :refer [wrap-json-response wrap-json-body]]
+            [ring.middleware.multipart-params :refer [wrap-multipart-params]]
             [hiccup.page :refer [html5 include-js include-css]]
             [hiccup.core :as h]
             [clj-time.core :as time]
@@ -113,6 +114,12 @@
         coll "users"]
     (mc/find-maps db coll { :login login })))
 
+(defn get-config []
+  (let [conn db-conn
+        db   (mg/get-db conn "wesele-app")
+        coll "config"]
+    (mc/find-maps db coll)))
+
 
 (defn user-structure [uname]
   (let [m (dissoc (first (get-user uname)) :_id :password)]
@@ -128,9 +135,6 @@
       (mc/insert db "users" { :_id (ObjectId.) :login name :password password})
     ))
 
-;(insert-user "admin" "test123")
-;(insert-user "user" "bez_hasla")
-;(insert-user "test" "test")
 
 (defn update-token-in-user [name token exp]
   (let [conn db-conn
@@ -167,10 +171,10 @@
 
 (defn get-user-structure [request]
   (let [username request]
-    (println request)
     (if-not (nil? username)
         (ok (user-structure username))
         (bad-request {:message "problem with logout"}))))
+
 
 (defn logout [request]
   (let [username (get-in request [:body :username])]
@@ -227,6 +231,8 @@
                  (wrap-json-response {:pretty false})
                  (wrap-json-body {:keywords? true :bigdecimals? true})
                  wrap-reload
-                 wrap-webjars))
+                 wrap-webjars
+                 wrap-multipart-params
+                 ))
 
 ;(def handler routes)

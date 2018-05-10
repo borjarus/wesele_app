@@ -1,5 +1,6 @@
 (ns wesele-app.views.index
   (:require [wesele-app.views.navbar :refer [nav-bar]]
+            [wesele-app.views.upload-component :refer [upload-component]]
             [re-frame.core :as re-frame]
             [goog.dom :as dom]
             [reagent.core :as r]
@@ -72,6 +73,9 @@
         special1 (-> @user
                      :details
                      :special1)
+        special2 (-> @user
+                     :details
+                     :special2)
         invitation_confirmed (-> @user
                      :details
                      :invitation_confirmed)
@@ -90,6 +94,14 @@
           [:p.alert.alert-success.p-3 "Potwierdzono przybycie " [:i.fa.fa-check.fa-lg.pl-1]]
           [:p.alert.alert-warning.p-3 "Oczekiwanie na potwierdzenie przybycia " [:i.fa.fa-times.fa-lg.pl-1]])
         ]]
+      [:div.row
+       [:div.col-md-12
+        [:p.pt-4 ""]]]
+      ;; upload to google gallery
+      (if (= special2 1)
+        [upload-component]
+        )
+      
       [:div.row
        [:div.col-md-12
         [:p.pt-4 ""]]]

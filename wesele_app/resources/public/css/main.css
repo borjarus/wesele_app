@@ -378,3 +378,9 @@ div#special1 #heart_icon {
   font-size: 142px;
   color: rebeccapurple;
 }
+
+#upload_file {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}

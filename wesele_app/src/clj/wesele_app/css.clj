@@ -325,6 +325,14 @@
     {:font-size "142px"
      :color "rebeccapurple"}]]
 
+  ;; UPLOAD-FILE COMPONENT
+  [:#upload_file
+   {
+    :width 0
+    :height 0
+    :visibility "hidden"
+    }]
+
   )
 
 

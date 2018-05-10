@@ -21,6 +21,11 @@
  (fn [db]
    (:pre-gallery db)))
 
+(re-frame/reg-sub
+ :dropbox-api-key
+ (fn [db]
+   (:dropbox-api-key db)))
+
 
 ;; ========================= REGISTER SUBS ==================================
 
