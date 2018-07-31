@@ -39,6 +39,7 @@
                  [com.cognitect/transit-cljs "0.8.239"]
                  [day8.re-frame/http-fx "0.1.3"]
                  [re-frisk "0.3.2"]
+                 [adzerk/env "0.4.0"] 
                  [com.andrewmcveigh/cljs-time "0.5.0-alpha2"]
                  ]
 

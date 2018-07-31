@@ -26,6 +26,11 @@
  (fn [db]
    (:dropbox-api-key db)))
 
+(re-frame/reg-sub
+ :imgur-client-id
+ (fn [db]
+   (:imgur-key db)))
+
 
 ;; ========================= REGISTER SUBS ==================================
 

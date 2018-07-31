@@ -23,7 +23,7 @@
             clojure.data.json
             [clojure.tools.logging :as log]
             monger.json
-            [wesele-app.galery-api :refer [get-all-images gallery-pagination filter-by-tag]]
+            [wesele-app.galery-api :refer [get-all-images gallery-pagination filter-by-tag insert-to-gallery]]
             [monger.credentials :as mcred] 
             )
   (:import [org.bson.types ObjectId]
@@ -203,6 +203,21 @@
       (do-rsvp login answer type)
       (ok {:message "OK" :answer answer :type type}))))
 
+;; GALERY
+(defn insert-to-gallery-action [request]
+  (let [{:keys [name path th-src tags type url-folder] :as args} (:body request)]
+    (if-not (every? empty? args)
+      (do (insert-to-gallery db-conn name path th-src tags type url-folder)
+          (ok {:message "OK"}))
+      (bad-request {:message "problem with get user structure"}))))
+
+(def test-request (ok {:name "file1.jpg" :path "http://examplepic.com" :th-src "http://examplethumbpic.com" :tags ["tag0" "tag6" "tag0" "tag6" "tag3"] :type "url" :url-folder "upload/"}))
+
+test-request
+
+;; (insert-to-gallery-action test-request)
+
+
 
 (defroutes routes
   ;(GET "/" [] {:status 200 :body (home-page)})
@@ -211,6 +226,7 @@
   (POST "/logout" req (logout req))
   (POST "/rsvp" req (rsvp req))
   (GET "/user/:login" [login] (get-user-structure login))
+  (POST "/gallery/add" req (insert-to-gallery-action req))
   (GET "/gallery/tags/:tag" [tag] (filter-by-tag db-conn tag))
   (GET "/gallery/:id{[0-9]+}" [id] (let [id (Integer/parseInt id)]
                                        (gallery-pagination db-conn id 5))) 

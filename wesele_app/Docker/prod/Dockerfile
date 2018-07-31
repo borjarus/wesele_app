@@ -1,8 +1,8 @@
 FROM clojure:alpine
 MAINTAINER Miroslaw Puczynski <public.mila@gmail.com>
            
-ENV port=10535
 VOLUME ["/home/mila/.m2" "/root/.m2"]
+EXPOSE 10535
 
 
 RUN apk update && apk upgrade && apk --update --no-cache add vim

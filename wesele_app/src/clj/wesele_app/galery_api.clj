@@ -8,24 +8,27 @@
   )
 
 
-(defn insert-to-gallery [db-conn name path th-src tags]
+;; type - url - from net, local - from local server
+;; url-folder if type = "url" then is name of folder, else nil
+
+(defn insert-to-gallery [db-conn name path th-src tags type url-folder]
   (let [conn db-conn
         db   (mg/get-db conn "wesele-app")]
-    (mc/insert db "gallery" { :_id (ObjectId.) :filename name :path_src path :path_thumb_src th-src :tags tags})
-    ))
+    (mc/insert db "gallery" { :_id (ObjectId.) :filename name :path_src path :path_thumb_src th-src :tags tags :type type :url-folder url-folder})))
 
 (defn random-tags [n]
   (into [] (map (fn [_]
          (str "tag" (rand-int 10))) (range n))))
 
-(random-tags 5)
+(random-tags 5)  
 
 (defn generate-12-examples [db-conn]
   (for [i (range 12)]
     (let [rand1 (rand-int 5)
           rand2 (inc (rand-int 3))]
-    (insert-to-gallery db-conn (str "00" rand2 ".png") "img/example/" "img/example/" (random-tags rand1))
+    (insert-to-gallery db-conn (str "00" rand2 ".png") "img/example/" "img/example/" (random-tags rand1) "local")
     )))
+
 
 (defn get-all-images [db-conn]
   (let [conn db-conn

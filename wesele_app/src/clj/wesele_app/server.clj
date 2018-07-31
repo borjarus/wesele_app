@@ -6,12 +6,12 @@
             [clojure.tools.nrepl.server :refer (start-server stop-server)])
   (:gen-class))
 
-;(def nrepl-server (do
-;                        (println "nREPL start at port 7888")
- ;                       (start-server :port 7888)))
+  ;;(defonce server (start-server :port 7888))
+
  (defn -main [& args]
    (let [port (Integer/parseInt (or (env :port) "10535"))]
      (println "[P] Service is running!")
      (log/info "[INFO] Service is running!")
-     ;;nrepl-server
+     (start-server :port 7888)
+     (log/info "[INFO] Starting nREPL ..!")
      (run-jetty handler {:port port :join? false})))
