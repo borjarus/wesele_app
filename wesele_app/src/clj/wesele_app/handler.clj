@@ -63,10 +63,9 @@
    [:head
     [:title "Ślub Ani i Mirka 18.08.2018"]
     [:meta {:name "viewport" :content "width=device-width, initial-scale=1, shrink-to-fit=no"}]
-    (include-css "/assets/bootstrap/css/bootstrap.min.css"
-                "/assets/leaflet/dist/leaflet.css"
-                "/assets/switchery/dist/switchery.min.css"
-                "/assets/font-awesome/css/font-awesome.min.css"
+    (include-css "/vendor/bootstrap/css/bootstrap.min.css"
+                "/vendor/leaflet/leaflet.css"
+                "/vendor/font-awesome/css/font-awesome.min.css"
                 "css/themes/light/nanogallery_light.min.css"
                 "css/nanogallery.min.css"
                 "css/wedding-icons.min.css"
@@ -86,14 +85,14 @@
     [:link {:rel "icon" :type "image/png" :href "img/favicon-96x96.png" :sizes "96x96"}]]
    [:body.diagonal-line-bg
     [:div {:id "app"} ""]
-    (include-js "/assets/jquery/jquery.min.js"
+    (include-js "/vendor/jquery/dist/jquery.min.js"
                 "js/jquery.nanogallery.min.js"
                 "js/jquery.easypiechart.min.js"
-                "/assets/tether/dist/js/tether.min.js"
-                "/assets/popper.js/dist/umd/popper.min.js"
-                "/assets/switchery/dist/switchery.min.js"
-                "/assets/bootstrap/js/bootstrap.min.js"
-                "/assets/leaflet/dist/leaflet.js"
+                "/vendor/tether/dist/js/tether.min.js"
+                "/vendor/popper.js/dist/umd/popper.min.js"
+                ;"/assets/switchery/dist/switchery.min.js"
+                "/vendor/bootstrap/js/bootstrap.min.js"
+                "/vendor/leaflet/leaflet.js"
                 "js/compiled/app.js")]
    [:script {:type "text/javascript"} "wesele_app.core.init();"]
     ))
